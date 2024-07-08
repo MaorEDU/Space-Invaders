@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab1Demo
-Mon Jul 08 15:47:26 2024
+Mon Jul 08 23:44:36 2024
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -15,31 +15,35 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
- 10. State Machine - |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst9|smiley_move:inst|SM_Motion
- 11. Registers Removed During Synthesis
- 12. Removed Registers Triggering Further Register Optimizations
- 13. General Register Statistics
- 14. Inverted Register Statistics
- 15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Source assignments for TOP_KBD:inst16|KBDINTF:inst
- 17. Source assignments for lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_2e71:auto_generated
- 18. Source assignments for sld_signaltap:auto_signaltap_0
- 19. Parameter Settings for User Entity Instance: AUDIO:inst18|sintable:inst1
- 20. Parameter Settings for User Entity Instance: AUDIO:inst18|addr_counter:inst9
- 21. Parameter Settings for User Entity Instance: CLK_31P5:inst7|CLK_31P5_0002:clk_31p5_inst|altera_pll:altera_pll_i
- 22. Parameter Settings for User Entity Instance: Smiley_Block_T:inst9|square_object:inst6
- 23. Parameter Settings for User Entity Instance: Smiley_Block_T:inst9|smiley_move:inst
- 24. Parameter Settings for User Entity Instance: lpm_rom:inst5
- 25. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 26. Port Connectivity Checks: "AUDIO:inst18|audio_codec_controller:inst|DualSerial2parallel:DualSerial2parallel_inst"
- 27. Port Connectivity Checks: "AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst"
- 28. Port Connectivity Checks: "AUDIO:inst18|audio_codec_controller:inst|CLOCK_500:CLOCK_500_inst"
- 29. SignalTap II Logic Analyzer Settings
- 30. Post-Synthesis Netlist Statistics for Top Partition
- 31. Elapsed Time Per Partition
- 32. Connections to In-System Debugging Instance "auto_signaltap_0"
- 33. Analysis & Synthesis Messages
- 34. Analysis & Synthesis Suppressed Messages
+ 10. State Machine - |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|smiley_move:inst|SM_Motion
+ 11. User-Specified and Inferred Latches
+ 12. Registers Removed During Synthesis
+ 13. Removed Registers Triggering Further Register Optimizations
+ 14. General Register Statistics
+ 15. Inverted Register Statistics
+ 16. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 17. Source assignments for TOP_KBD:inst16|KBDINTF:inst
+ 18. Source assignments for lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_2e71:auto_generated
+ 19. Source assignments for sld_signaltap:auto_signaltap_0
+ 20. Parameter Settings for User Entity Instance: AUDIO:inst18|sintable:inst1
+ 21. Parameter Settings for User Entity Instance: AUDIO:inst18|addr_counter:inst9
+ 22. Parameter Settings for User Entity Instance: CLK_31P5:inst7|CLK_31P5_0002:clk_31p5_inst|altera_pll:altera_pll_i
+ 23. Parameter Settings for User Entity Instance: Smiley_Block_T:inst1|square_object:inst6
+ 24. Parameter Settings for User Entity Instance: Smiley_Block_T:inst1|smiley_move:inst
+ 25. Parameter Settings for User Entity Instance: projectile_Block_T:inst2|projectile_object:inst1
+ 26. Parameter Settings for User Entity Instance: projectile_Block_T:inst2|projectile_move:inst
+ 27. Parameter Settings for User Entity Instance: lpm_rom:inst5
+ 28. Parameter Settings for User Entity Instance: back_ground_draw:inst4
+ 29. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 30. Port Connectivity Checks: "AUDIO:inst18|audio_codec_controller:inst|DualSerial2parallel:DualSerial2parallel_inst"
+ 31. Port Connectivity Checks: "AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst"
+ 32. Port Connectivity Checks: "AUDIO:inst18|audio_codec_controller:inst|CLOCK_500:CLOCK_500_inst"
+ 33. SignalTap II Logic Analyzer Settings
+ 34. Post-Synthesis Netlist Statistics for Top Partition
+ 35. Elapsed Time Per Partition
+ 36. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 37. Analysis & Synthesis Messages
+ 38. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -66,13 +70,13 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jul 08 15:47:26 2024       ;
+; Analysis & Synthesis Status     ; Successful - Mon Jul 08 23:44:36 2024       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; Lab1Demo                                    ;
 ; Top-level Entity Name           ; TOP_VGA_DEMO_KBD                            ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 844                                         ;
+; Total registers                 ; 932                                         ;
 ; Total pins                      ; 52                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 2,486,272                                   ;
@@ -204,6 +208,7 @@ agreement for further details.
 ; RTL/VGA/Smiley_Block_T.bdf                                         ; yes             ; User Block Diagram/Schematic File            ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/Smiley_Block_T.bdf                                         ;             ;
 ; RTL/VGA/smileyBitMap.sv                                            ; yes             ; User SystemVerilog HDL File                  ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/smileyBitMap.sv                                            ;             ;
 ; RTL/VGA/square_object.sv                                           ; yes             ; User SystemVerilog HDL File                  ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/square_object.sv                                           ;             ;
+; RTL/VGA/back_ground_draw.sv                                        ; yes             ; User SystemVerilog HDL File                  ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/back_ground_draw.sv                                        ;             ;
 ; RTL/VGA/smiley_move.sv                                             ; yes             ; User SystemVerilog HDL File                  ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/smiley_move.sv                                             ;             ;
 ; RTL/VGA/objects_mux.sv                                             ; yes             ; User SystemVerilog HDL File                  ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/objects_mux.sv                                             ;             ;
 ; RTL/VGA/VGA_Controller.sv                                          ; yes             ; User SystemVerilog HDL File                  ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/VGA_Controller.sv                                          ;             ;
@@ -222,6 +227,10 @@ agreement for further details.
 ; Number_position.v                                                  ; yes             ; User Wizard-Generated File                   ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_position.v                                                  ;             ;
 ; CLK_31P5.v                                                         ; yes             ; User Wizard-Generated File                   ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/CLK_31P5.v                                                         ; CLK_31P5    ;
 ; CLK_31P5/CLK_31P5_0002.v                                           ; yes             ; User Verilog HDL File                        ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/CLK_31P5/CLK_31P5_0002.v                                           ; CLK_31P5    ;
+; RTL/VGA/projectile_move.sv                                         ; yes             ; User SystemVerilog HDL File                  ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv                                         ;             ;
+; RTL/VGA/projectile_object.sv                                       ; yes             ; User SystemVerilog HDL File                  ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_object.sv                                       ;             ;
+; output_files/projectile_bitmap.sv                                  ; yes             ; User SystemVerilog HDL File                  ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv                                  ;             ;
+; output_files/projectile_Block_T.bdf                                ; yes             ; User Block Diagram/Schematic File            ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_Block_T.bdf                                ;             ;
 ; altera_pll.v                                                       ; yes             ; Megafunction                                 ; c:/users/maora/desktop/technion/lab/quartus/libraries/megafunctions/altera_pll.v                                      ;             ;
 ; lpm_rom.tdf                                                        ; yes             ; Megafunction                                 ; c:/users/maora/desktop/technion/lab/quartus/libraries/megafunctions/lpm_rom.tdf                                       ;             ;
 ; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/users/maora/desktop/technion/lab/quartus/libraries/megafunctions/altrom.inc                                        ;             ;
@@ -285,11 +294,6 @@ agreement for further details.
 ; db/ip/sld6dfc5e3d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/db/ip/sld6dfc5e3d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
 ; db/ip/sld6dfc5e3d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/db/ip/sld6dfc5e3d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
 ; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/users/maora/desktop/technion/lab/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                  ;             ;
-; lpm_constant.tdf                                                   ; yes             ; Megafunction                                 ; c:/users/maora/desktop/technion/lab/quartus/libraries/megafunctions/lpm_constant.tdf                                  ;             ;
-; db/lpm_constant_4i8.tdf                                            ; yes             ; Auto-Generated Megafunction                  ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/db/lpm_constant_4i8.tdf                                            ;             ;
-; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/users/maora/desktop/technion/lab/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                               ;             ;
-; matrix_top_xy.v                                                    ; yes             ; Auto-Found Wizard-Generated File             ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/matrix_top_xy.v                                                    ;             ;
-; db/lpm_constant_gj8.tdf                                            ; yes             ; Auto-Generated Megafunction                  ; C:/Users/maora/Desktop/Technion/lab/Space-Invaders/db/lpm_constant_gj8.tdf                                            ;             ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+-------------+
 
 
@@ -298,16 +302,16 @@ agreement for further details.
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                             ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 729                                                                               ;
+; Estimate of Logic utilization (ALMs needed) ; 1055                                                                              ;
 ;                                             ;                                                                                   ;
-; Combinational ALUT usage for logic          ; 970                                                                               ;
-;     -- 7 input functions                    ; 10                                                                                ;
-;     -- 6 input functions                    ; 336                                                                               ;
-;     -- 5 input functions                    ; 159                                                                               ;
-;     -- 4 input functions                    ; 112                                                                               ;
-;     -- <=3 input functions                  ; 353                                                                               ;
+; Combinational ALUT usage for logic          ; 1501                                                                              ;
+;     -- 7 input functions                    ; 16                                                                                ;
+;     -- 6 input functions                    ; 452                                                                               ;
+;     -- 5 input functions                    ; 244                                                                               ;
+;     -- 4 input functions                    ; 162                                                                               ;
+;     -- <=3 input functions                  ; 627                                                                               ;
 ;                                             ;                                                                                   ;
-; Dedicated logic registers                   ; 844                                                                               ;
+; Dedicated logic registers                   ; 932                                                                               ;
 ;                                             ;                                                                                   ;
 ; I/O pins                                    ; 52                                                                                ;
 ; Total MLAB memory bits                      ; 0                                                                                 ;
@@ -319,9 +323,9 @@ agreement for further details.
 ;     -- PLLs                                 ; 1                                                                                 ;
 ;                                             ;                                                                                   ;
 ; Maximum fan-out node                        ; CLK_31P5:inst7|CLK_31P5_0002:clk_31p5_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
-; Maximum fan-out                             ; 552                                                                               ;
-; Total fan-out                               ; 12061                                                                             ;
-; Average fan-out                             ; 5.35                                                                              ;
+; Maximum fan-out                             ; 664                                                                               ;
+; Total fan-out                               ; 14366                                                                             ;
+; Average fan-out                             ; 5.00                                                                              ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 
 
@@ -330,28 +334,29 @@ agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                          ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |TOP_VGA_DEMO_KBD                                                                                                                       ; 970 (2)             ; 844 (0)                   ; 2486272           ; 0          ; 52   ; 0            ; |TOP_VGA_DEMO_KBD                                                                                                                                                                                                                                                                                                                                            ; TOP_VGA_DEMO_KBD                  ; work         ;
+; |TOP_VGA_DEMO_KBD                                                                                                                       ; 1501 (2)            ; 932 (0)                   ; 2486272           ; 0          ; 52   ; 0            ; |TOP_VGA_DEMO_KBD                                                                                                                                                                                                                                                                                                                                            ; TOP_VGA_DEMO_KBD                  ; work         ;
 ;    |AUDIO:inst18|                                                                                                                       ; 108 (0)             ; 84 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|AUDIO:inst18                                                                                                                                                                                                                                                                                                                               ; AUDIO                             ; work         ;
 ;       |audio_codec_controller:inst|                                                                                                     ; 108 (0)             ; 83 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|audio_codec_controller:inst                                                                                                                                                                                                                                                                                                   ; audio_codec_controller            ; work         ;
-;          |CLOCK_500:CLOCK_500_inst|                                                                                                     ; 31 (31)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|audio_codec_controller:inst|CLOCK_500:CLOCK_500_inst                                                                                                                                                                                                                                                                          ; CLOCK_500                         ; work         ;
+;          |CLOCK_500:CLOCK_500_inst|                                                                                                     ; 32 (32)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|audio_codec_controller:inst|CLOCK_500:CLOCK_500_inst                                                                                                                                                                                                                                                                          ; CLOCK_500                         ; work         ;
 ;          |DualSerial2parallel:DualSerial2parallel_inst|                                                                                 ; 46 (46)             ; 44 (44)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|audio_codec_controller:inst|DualSerial2parallel:DualSerial2parallel_inst                                                                                                                                                                                                                                                      ; DualSerial2parallel               ; work         ;
-;          |i2c:i2c_inst|                                                                                                                 ; 31 (31)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst                                                                                                                                                                                                                                                                                      ; i2c                               ; work         ;
+;          |i2c:i2c_inst|                                                                                                                 ; 30 (30)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst                                                                                                                                                                                                                                                                                      ; i2c                               ; work         ;
 ;       |sintable:inst1|                                                                                                                  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|sintable:inst1                                                                                                                                                                                                                                                                                                                ; sintable                          ; work         ;
 ;    |CLK_31P5:inst7|                                                                                                                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|CLK_31P5:inst7                                                                                                                                                                                                                                                                                                                             ; CLK_31P5                          ; CLK_31P5     ;
 ;       |CLK_31P5_0002:clk_31p5_inst|                                                                                                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|CLK_31P5:inst7|CLK_31P5_0002:clk_31p5_inst                                                                                                                                                                                                                                                                                                 ; CLK_31P5_0002                     ; CLK_31P5     ;
 ;          |altera_pll:altera_pll_i|                                                                                                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|CLK_31P5:inst7|CLK_31P5_0002:clk_31p5_inst|altera_pll:altera_pll_i                                                                                                                                                                                                                                                                         ; altera_pll                        ; work         ;
 ;    |SEG7:inst10|                                                                                                                        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|SEG7:inst10                                                                                                                                                                                                                                                                                                                                ; SEG7                              ; work         ;
-;    |Smiley_Block_T:inst9|                                                                                                               ; 213 (0)             ; 55 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst9                                                                                                                                                                                                                                                                                                                       ; Smiley_Block_T                    ; work         ;
-;       |smileyBitMap:inst1|                                                                                                              ; 110 (110)           ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst9|smileyBitMap:inst1                                                                                                                                                                                                                                                                                                    ; smileyBitMap                      ; work         ;
-;       |smiley_move:inst|                                                                                                                ; 65 (65)             ; 37 (37)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst9|smiley_move:inst                                                                                                                                                                                                                                                                                                      ; smiley_move                       ; work         ;
-;       |square_object:inst6|                                                                                                             ; 38 (38)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst9|square_object:inst6                                                                                                                                                                                                                                                                                                   ; square_object                     ; work         ;
-;    |TOP_KBD:inst16|                                                                                                                     ; 65 (0)              ; 58 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|TOP_KBD:inst16                                                                                                                                                                                                                                                                                                                             ; TOP_KBD                           ; work         ;
+;    |Smiley_Block_T:inst1|                                                                                                               ; 352 (0)             ; 119 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1                                                                                                                                                                                                                                                                                                                       ; Smiley_Block_T                    ; work         ;
+;       |smileyBitMap:inst1|                                                                                                              ; 120 (120)           ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|smileyBitMap:inst1                                                                                                                                                                                                                                                                                                    ; smileyBitMap                      ; work         ;
+;       |smiley_move:inst|                                                                                                                ; 178 (178)           ; 85 (85)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|smiley_move:inst                                                                                                                                                                                                                                                                                                      ; smiley_move                       ; work         ;
+;       |square_object:inst6|                                                                                                             ; 54 (54)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|square_object:inst6                                                                                                                                                                                                                                                                                                   ; square_object                     ; work         ;
+;    |TOP_KBD:inst16|                                                                                                                     ; 67 (0)              ; 59 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|TOP_KBD:inst16                                                                                                                                                                                                                                                                                                                             ; TOP_KBD                           ; work         ;
 ;       |KBDINTF:inst|                                                                                                                    ; 40 (0)              ; 52 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|TOP_KBD:inst16|KBDINTF:inst                                                                                                                                                                                                                                                                                                                ; KBDINTF                           ; work         ;
 ;          |bitrec:inst4|                                                                                                                 ; 16 (16)             ; 28 (28)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|TOP_KBD:inst16|KBDINTF:inst|bitrec:inst4                                                                                                                                                                                                                                                                                                   ; bitrec                            ; work         ;
 ;          |byterec:inst3|                                                                                                                ; 19 (19)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|TOP_KBD:inst16|KBDINTF:inst|byterec:inst3                                                                                                                                                                                                                                                                                                  ; byterec                           ; work         ;
 ;          |lpf:inst5|                                                                                                                    ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|TOP_KBD:inst16|KBDINTF:inst|lpf:inst5                                                                                                                                                                                                                                                                                                      ; lpf                               ; work         ;
-;       |keyPad_decoder:inst2|                                                                                                            ; 25 (25)             ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|TOP_KBD:inst16|keyPad_decoder:inst2                                                                                                                                                                                                                                                                                                        ; keyPad_decoder                    ; work         ;
-;    |VGA_Controller:inst|                                                                                                                ; 85 (85)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|VGA_Controller:inst                                                                                                                                                                                                                                                                                                                        ; VGA_Controller                    ; work         ;
+;       |keyPad_decoder:inst2|                                                                                                            ; 27 (27)             ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|TOP_KBD:inst16|keyPad_decoder:inst2                                                                                                                                                                                                                                                                                                        ; keyPad_decoder                    ; work         ;
+;    |VGA_Controller:inst|                                                                                                                ; 91 (91)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|VGA_Controller:inst                                                                                                                                                                                                                                                                                                                        ; VGA_Controller                    ; work         ;
+;    |game_controller:inst20|                                                                                                             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|game_controller:inst20                                                                                                                                                                                                                                                                                                                     ; game_controller                   ; work         ;
 ;    |lpm_rom:inst5|                                                                                                                      ; 55 (0)              ; 6 (0)                     ; 2457600           ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5                                                                                                                                                                                                                                                                                                                              ; lpm_rom                           ; work         ;
 ;       |altrom:srom|                                                                                                                     ; 55 (0)              ; 6 (0)                     ; 2457600           ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom                                                                                                                                                                                                                                                                                                                  ; altrom                            ; work         ;
 ;          |altsyncram:rom_block|                                                                                                         ; 55 (0)              ; 6 (0)                     ; 2457600           ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom|altsyncram:rom_block                                                                                                                                                                                                                                                                                             ; altsyncram                        ; work         ;
@@ -359,6 +364,10 @@ agreement for further details.
 ;                |decode_s2a:rden_decode|                                                                                                 ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_2e71:auto_generated|decode_s2a:rden_decode                                                                                                                                                                                                                                       ; decode_s2a                        ; work         ;
 ;                |mux_jhb:mux2|                                                                                                           ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_2e71:auto_generated|mux_jhb:mux2                                                                                                                                                                                                                                                 ; mux_jhb                           ; work         ;
 ;    |objects_mux:inst19|                                                                                                                 ; 90 (90)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|objects_mux:inst19                                                                                                                                                                                                                                                                                                                         ; objects_mux                       ; work         ;
+;    |projectile_Block_T:inst2|                                                                                                           ; 383 (0)             ; 23 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|projectile_Block_T:inst2                                                                                                                                                                                                                                                                                                                   ; projectile_Block_T                ; work         ;
+;       |projectileBitMap:inst2|                                                                                                          ; 74 (74)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|projectile_Block_T:inst2|projectileBitMap:inst2                                                                                                                                                                                                                                                                                            ; projectileBitMap                  ; work         ;
+;       |projectile_move:inst|                                                                                                            ; 239 (239)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|projectile_Block_T:inst2|projectile_move:inst                                                                                                                                                                                                                                                                                              ; projectile_move                   ; work         ;
+;       |projectile_object:inst1|                                                                                                         ; 70 (70)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|projectile_Block_T:inst2|projectile_object:inst1                                                                                                                                                                                                                                                                                           ; projectile_object                 ; work         ;
 ;    |sld_hub:auto_hub|                                                                                                                   ; 94 (1)              ; 91 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
 ;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 93 (0)              ; 91 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
 ;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 93 (0)              ; 91 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA_DEMO_KBD|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
@@ -443,7 +452,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 Encoding Type:  One-Hot
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst9|smiley_move:inst|SM_Motion                                                                                ;
+; State Machine - |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|smiley_move:inst|SM_Motion                                                                                ;
 +------------------------------+------------------------------+-----------------------------+-------------------+-------------------+------------------------------+
 ; Name                         ; SM_Motion.POSITION_CHANGE_ST ; SM_Motion.START_OF_FRAME_ST ; SM_Motion.MOVE_ST ; SM_Motion.IDLE_ST ; SM_Motion.POSITION_LIMITS_ST ;
 +------------------------------+------------------------------+-----------------------------+-------------------+-------------------+------------------------------+
@@ -455,11 +464,92 @@ Encoding Type:  One-Hot
 +------------------------------+------------------------------+-----------------------------+-------------------+-------------------+------------------------------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                                                    ;
++---------------------------------------------------------------------------------+-------------------------------------------------------------+------------------------+
+; Latch Name                                                                      ; Latch Enable Signal                                         ; Free of Timing Hazards ;
++---------------------------------------------------------------------------------+-------------------------------------------------------------+------------------------+
+; projectile_Block_T:inst2|projectile_move:inst|active                            ; projectile_Block_T:inst2|projectile_move:inst|Selector13    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Xposition[16]                     ; projectile_Block_T:inst2|projectile_move:inst|Xposition[31] ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Xposition[15]                     ; projectile_Block_T:inst2|projectile_move:inst|Xposition[31] ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Xposition[14]                     ; projectile_Block_T:inst2|projectile_move:inst|Xposition[31] ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Xposition[13]                     ; projectile_Block_T:inst2|projectile_move:inst|Xposition[31] ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Xposition[12]                     ; projectile_Block_T:inst2|projectile_move:inst|Xposition[31] ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Xposition[11]                     ; projectile_Block_T:inst2|projectile_move:inst|Xposition[31] ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Xposition[10]                     ; projectile_Block_T:inst2|projectile_move:inst|Xposition[31] ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Xposition[9]                      ; projectile_Block_T:inst2|projectile_move:inst|Xposition[31] ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Xposition[8]                      ; projectile_Block_T:inst2|projectile_move:inst|Xposition[31] ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Xposition[7]                      ; projectile_Block_T:inst2|projectile_move:inst|Xposition[31] ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Xposition[6]                      ; projectile_Block_T:inst2|projectile_move:inst|Xposition[31] ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|SM_Motion.MOVE_ST_2114            ; projectile_Block_T:inst2|projectile_move:inst|Selector73    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|SM_Motion.IDLE_ST_2127            ; projectile_Block_T:inst2|projectile_move:inst|Selector77    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|SM_Motion.START_OF_FRAME_ST_2101  ; projectile_Block_T:inst2|projectile_move:inst|Selector77    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[4]                        ; projectile_Block_T:inst2|projectile_move:inst|Selector3     ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[3]                        ; projectile_Block_T:inst2|projectile_move:inst|Selector5     ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[2]                        ; projectile_Block_T:inst2|projectile_move:inst|Selector7     ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[1]                        ; projectile_Block_T:inst2|projectile_move:inst|Selector9     ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[0]                        ; projectile_Block_T:inst2|projectile_move:inst|Selector11    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[6]                        ; projectile_Block_T:inst2|projectile_move:inst|Selector15    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[7]                        ; projectile_Block_T:inst2|projectile_move:inst|Selector17    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[8]                        ; projectile_Block_T:inst2|projectile_move:inst|Selector19    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[9]                        ; projectile_Block_T:inst2|projectile_move:inst|Selector21    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[10]                       ; projectile_Block_T:inst2|projectile_move:inst|Selector23    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[11]                       ; projectile_Block_T:inst2|projectile_move:inst|Selector25    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[12]                       ; projectile_Block_T:inst2|projectile_move:inst|Selector27    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[13]                       ; projectile_Block_T:inst2|projectile_move:inst|Selector29    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[14]                       ; projectile_Block_T:inst2|projectile_move:inst|Selector31    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[15]                       ; projectile_Block_T:inst2|projectile_move:inst|Selector33    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|hit_reg[5]                        ; projectile_Block_T:inst2|projectile_move:inst|Selector1     ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[16]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[15]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[14]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[13]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[12]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[11]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[10]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[9]                      ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[8]                      ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[7]                      ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[6]                      ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 ; projectile_Block_T:inst2|projectile_move:inst|Selector73    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_CHANGE_ST_2088 ; projectile_Block_T:inst2|projectile_move:inst|Selector73    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[31]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[30]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[17]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[18]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[19]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[20]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[21]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[22]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[23]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[24]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[25]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[26]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[27]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[28]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[29]                     ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[0]                      ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[1]                      ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[2]                      ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[3]                      ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[4]                      ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yposition[5]                      ; projectile_Block_T:inst2|projectile_move:inst|Selector35    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yspeed[1]                         ; projectile_Block_T:inst2|projectile_move:inst|Selector70    ; yes                    ;
+; projectile_Block_T:inst2|projectile_move:inst|Yspeed[3]                         ; projectile_Block_T:inst2|projectile_move:inst|Selector70    ; yes                    ;
+; Number of user-specified and inferred latches = 67                              ;                                                             ;                        ;
++---------------------------------------------------------------------------------+-------------------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Registers Removed During Synthesis                                                                                                                                                  ;
 +----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
 ; Register name                                                                                            ; Reason for Removal                                                       ;
 +----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+; game_controller:inst20|SingleHitPulse                                                                    ; Stuck at GND due to stuck port data_in                                   ;
+; AUDIO:inst18|prescaler:inst3|slowEnPulse                                                                 ; Lost fanout                                                              ;
+; AUDIO:inst18|addr_counter:inst9|addr[1..7]                                                               ; Stuck at GND due to stuck port clock_enable                              ;
+; AUDIO:inst18|sintable:inst1|tmp8bit[4..7]                                                                ; Stuck at GND due to stuck port data_in                                   ;
 ; AUDIO:inst18|audio_codec_controller:inst|CLOCK_500:CLOCK_500_inst|ROM[0][3]                              ; Stuck at GND due to stuck port data_in                                   ;
 ; AUDIO:inst18|audio_codec_controller:inst|CLOCK_500:CLOCK_500_inst|ROM[0][2]                              ; Stuck at GND due to stuck port data_in                                   ;
 ; AUDIO:inst18|audio_codec_controller:inst|CLOCK_500:CLOCK_500_inst|ROM[0][1]                              ; Stuck at GND due to stuck port data_in                                   ;
@@ -636,68 +726,31 @@ Encoding Type:  One-Hot
 ; AUDIO:inst18|audio_codec_controller:inst|CLOCK_500:CLOCK_500_inst|ROM[10][13]                            ; Stuck at GND due to stuck port data_in                                   ;
 ; AUDIO:inst18|audio_codec_controller:inst|CLOCK_500:CLOCK_500_inst|ROM[10][14]                            ; Stuck at GND due to stuck port data_in                                   ;
 ; AUDIO:inst18|audio_codec_controller:inst|CLOCK_500:CLOCK_500_inst|ROM[10][15]                            ; Stuck at GND due to stuck port data_in                                   ;
-; Smiley_Block_T:inst9|smileyBitMap:inst1|HitEdgeCode[0..3]                                                ; Lost fanout                                                              ;
-; game_controller:inst20|SingleHitPulse                                                                    ; Stuck at GND due to stuck port data_in                                   ;
-; AUDIO:inst18|prescaler:inst3|slowEnPulse                                                                 ; Lost fanout                                                              ;
-; AUDIO:inst18|addr_counter:inst9|addr[1..7]                                                               ; Stuck at GND due to stuck port clock_enable                              ;
-; AUDIO:inst18|sintable:inst1|tmp8bit[4..7]                                                                ; Stuck at GND due to stuck port data_in                                   ;
 ; AUDIO:inst18|addr_counter:inst9|addr[0]                                                                  ; Stuck at GND due to stuck port clock_enable                              ;
 ; AUDIO:inst18|sintable:inst1|tmp8bit[2,3]                                                                 ; Stuck at GND due to stuck port data_in                                   ;
-; game_controller:inst20|collision_smiley_number                                                           ; Lost fanout                                                              ;
-; game_controller:inst20|flag                                                                              ; Lost fanout                                                              ;
 ; AUDIO:inst18|prescaler:inst3|counter[0..31]                                                              ; Lost fanout                                                              ;
-; Smiley_Block_T:inst9|smiley_move:inst|Yposition[0,15..31]                                                ; Stuck at GND due to stuck port data_in                                   ;
-; Smiley_Block_T:inst9|smiley_move:inst|Yposition[13,14]                                                   ; Stuck at VCC due to stuck port data_in                                   ;
-; Smiley_Block_T:inst9|smiley_move:inst|Yposition[12]                                                      ; Stuck at GND due to stuck port data_in                                   ;
-; Smiley_Block_T:inst9|smiley_move:inst|Yposition[11]                                                      ; Stuck at VCC due to stuck port data_in                                   ;
-; Smiley_Block_T:inst9|smiley_move:inst|Yposition[9,10]                                                    ; Stuck at GND due to stuck port data_in                                   ;
-; Smiley_Block_T:inst9|smiley_move:inst|Yposition[8]                                                       ; Stuck at VCC due to stuck port data_in                                   ;
-; Smiley_Block_T:inst9|smiley_move:inst|Yposition[1..7]                                                    ; Stuck at GND due to stuck port data_in                                   ;
+; Smiley_Block_T:inst1|smiley_move:inst|Yposition[0,15..31]                                                ; Stuck at GND due to stuck port data_in                                   ;
+; Smiley_Block_T:inst1|smiley_move:inst|Yposition[13,14]                                                   ; Stuck at VCC due to stuck port data_in                                   ;
+; Smiley_Block_T:inst1|smiley_move:inst|Yposition[12]                                                      ; Stuck at GND due to stuck port data_in                                   ;
+; Smiley_Block_T:inst1|smiley_move:inst|Yposition[11]                                                      ; Stuck at VCC due to stuck port data_in                                   ;
+; Smiley_Block_T:inst1|smiley_move:inst|Yposition[9,10]                                                    ; Stuck at GND due to stuck port data_in                                   ;
+; Smiley_Block_T:inst1|smiley_move:inst|Yposition[8]                                                       ; Stuck at VCC due to stuck port data_in                                   ;
+; Smiley_Block_T:inst1|smiley_move:inst|Yposition[1..7]                                                    ; Stuck at GND due to stuck port data_in                                   ;
 ; AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst|SD[22,23]                                          ; Stuck at GND due to stuck port data_in                                   ;
 ; AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst|SD[20,21]                                          ; Stuck at VCC due to stuck port data_in                                   ;
 ; AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst|SD[19]                                             ; Stuck at GND due to stuck port data_in                                   ;
 ; AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst|SD[18]                                             ; Stuck at VCC due to stuck port data_in                                   ;
 ; AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst|SD[16,17]                                          ; Stuck at GND due to stuck port data_in                                   ;
-; Smiley_Block_T:inst9|smileyBitMap:inst1|RGBout[1]                                                        ; Merged with Smiley_Block_T:inst9|smileyBitMap:inst1|RGBout[3]            ;
+; Smiley_Block_T:inst1|smileyBitMap:inst1|RGBout[1]                                                        ; Merged with Smiley_Block_T:inst1|smileyBitMap:inst1|RGBout[3]            ;
 ; AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst|SD[7,8,14,15]                                      ; Merged with AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst|SD[13] ;
 ; AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst|SD[3,5]                                            ; Merged with AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst|SD[2]  ;
-; Smiley_Block_T:inst9|smiley_move:inst|hit_reg[1..15]                                                     ; Merged with Smiley_Block_T:inst9|smiley_move:inst|hit_reg[0]             ;
 ; AUDIO:inst18|sintable:inst1|tmp8bit[1]                                                                   ; Merged with AUDIO:inst18|sintable:inst1|tmp8bit[0]                       ;
 ; AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst|SD[13]                                             ; Stuck at GND due to stuck port data_in                                   ;
-; Smiley_Block_T:inst9|smiley_move:inst|hit_reg[0]                                                         ; Stuck at GND due to stuck port data_in                                   ;
 ; AUDIO:inst18|audio_codec_controller:inst|DualSerial2parallel:DualSerial2parallel_inst|DACdata_fifo[0..6] ; Stuck at GND due to stuck port data_in                                   ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[0..2]                                                       ; Stuck at GND due to stuck port data_in                                   ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xposition[0..2]                                                    ; Stuck at GND due to stuck port data_in                                   ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[4]                                                          ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[6]              ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[6]                                                          ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[7]              ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[7]                                                          ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[8]              ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[8]                                                          ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[9]              ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[9]                                                          ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[10]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[10]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[11]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[11]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[12]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[12]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[13]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[13]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[14]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[14]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[15]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[15]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[16]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[16]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[17]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[17]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[18]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[18]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[19]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[19]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[20]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[20]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[21]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[21]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[22]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[22]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[23]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[23]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[24]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[24]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[25]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[25]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[26]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[26]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[27]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[27]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[28]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[28]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[29]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[29]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[30]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[30]                                                         ; Merged with Smiley_Block_T:inst9|smiley_move:inst|Xspeed[31]             ;
-; Smiley_Block_T:inst9|smiley_move:inst|SM_Motion~9                                                        ; Lost fanout                                                              ;
-; Smiley_Block_T:inst9|smiley_move:inst|SM_Motion~10                                                       ; Lost fanout                                                              ;
+; Smiley_Block_T:inst1|smiley_move:inst|SM_Motion~9                                                        ; Lost fanout                                                              ;
+; Smiley_Block_T:inst1|smiley_move:inst|SM_Motion~10                                                       ; Lost fanout                                                              ;
 ; AUDIO:inst18|audio_codec_controller:inst|CLOCK_500:CLOCK_500_inst|address[4,5]                           ; Stuck at GND due to stuck port data_in                                   ;
-; Total Number of Removed Registers = 338                                                                  ;                                                                          ;
+; Total Number of Removed Registers = 284                                                                  ;                                                                          ;
 +----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
 
 
@@ -732,12 +785,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 844   ;
-; Number of registers using Synchronous Clear  ; 200   ;
-; Number of registers using Synchronous Load   ; 175   ;
-; Number of registers using Asynchronous Clear ; 419   ;
+; Total registers                              ; 932   ;
+; Number of registers using Synchronous Clear  ; 250   ;
+; Number of registers using Synchronous Load   ; 187   ;
+; Number of registers using Asynchronous Clear ; 484   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 498   ;
+; Number of registers using Clock Enable       ; 551   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -747,14 +800,14 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                                                                                                                                                                                                                                                                               ; Fan out ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; VGA_Controller:inst|oVGA_VS                                                                                                                                                                                                                                                                                                     ; 6       ;
-; VGA_Controller:inst|oVGA_HS                                                                                                                                                                                                                                                                                                     ; 5       ;
-; VGA_Controller:inst|oVGA_HS_d                                                                                                                                                                                                                                                                                                   ; 2       ;
+; Smiley_Block_T:inst1|smiley_move:inst|Xspeed[5]                                                                                                                                                                                                                                                                                 ; 3       ;
+; VGA_Controller:inst|oVGA_VS                                                                                                                                                                                                                                                                                                     ; 11      ;
+; VGA_Controller:inst|oVGA_HS                                                                                                                                                                                                                                                                                                     ; 4       ;
+; VGA_Controller:inst|oVGA_HS_d                                                                                                                                                                                                                                                                                                   ; 1       ;
 ; AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst|SDO                                                                                                                                                                                                                                                                       ; 2       ;
 ; AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst|I2C_clk_0                                                                                                                                                                                                                                                                 ; 2       ;
 ; AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst|I2C_clk_en                                                                                                                                                                                                                                                                ; 2       ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[3]                                                                                                                                                                                                                                                                                 ; 1       ;
-; Smiley_Block_T:inst9|smiley_move:inst|Xspeed[5]                                                                                                                                                                                                                                                                                 ; 1       ;
+; Smiley_Block_T:inst1|smiley_move:inst|Xspeed[3]                                                                                                                                                                                                                                                                                 ; 3       ;
 ; TOP_KBD:inst16|KBDINTF:inst|lpf:inst5|SM_LPF                                                                                                                                                                                                                                                                                    ; 9       ;
 ; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[1] ; 3       ;
 ; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[2] ; 3       ;
@@ -779,17 +832,22 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|TOP_KBD:inst16|keyPad_decoder:inst2|keyIsPressed[4]                                                             ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst|SD_COUNTER[1]                                             ;
-; 3:1                ; 39 bits   ; 78 LEs        ; 0 LEs                ; 78 LEs                 ; Yes        ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|audio_codec_controller:inst|DualSerial2parallel:DualSerial2parallel_inst|DACdata_fifo[12]          ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst9|smiley_move:inst|Xposition[18]                                                             ;
-; 6:1                ; 30 bits   ; 120 LEs       ; 0 LEs                ; 120 LEs                ; Yes        ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst9|smiley_move:inst|Xspeed[27]                                                                ;
-; 15:1               ; 6 bits    ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst9|smileyBitMap:inst1|RGBout[4]                                                               ;
-; 34:1               ; 8 bits    ; 176 LEs       ; 176 LEs              ; 0 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|objects_mux:inst19|RGBOut[7]                                                                                    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|TOP_KBD:inst16|keyPad_decoder:inst2|keyIsPressed[6]                                                             ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|audio_codec_controller:inst|i2c:i2c_inst|SD_COUNTER[2]                                             ;
+; 3:1                ; 39 bits   ; 78 LEs        ; 0 LEs                ; 78 LEs                 ; Yes        ; |TOP_VGA_DEMO_KBD|AUDIO:inst18|audio_codec_controller:inst|DualSerial2parallel:DualSerial2parallel_inst|serial_cnt[17]            ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|smiley_move:inst|Xposition[1]                                                              ;
+; 15:1               ; 2 bits    ; 20 LEs        ; 12 LEs               ; 8 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[1]                                                  ;
+; 15:1               ; 2 bits    ; 20 LEs        ; 12 LEs               ; 8 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|smileyBitMap:inst1|HitEdgeCode[1]                                                          ;
+; 15:1               ; 6 bits    ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|smileyBitMap:inst1|RGBout[7]                                                               ;
+; 12:1               ; 29 bits   ; 232 LEs       ; 29 LEs               ; 203 LEs                ; Yes        ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|smiley_move:inst|Xspeed[17]                                                                ;
+; 35:1               ; 8 bits    ; 184 LEs       ; 176 LEs              ; 8 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|objects_mux:inst19|RGBOut[6]                                                                                    ;
 ; 10:1               ; 3 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|TOP_KBD:inst16|keyPad_decoder:inst2|key[0]                                                                      ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst9|smiley_move:inst|Xspeed[3]                                                                 ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_2e71:auto_generated|mux_jhb:mux2|l3_w7_n4_mux_dataout ;
-; 13:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst9|smileyBitMap:inst1|Mux100                                                                  ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 6 LEs                ; 10 LEs                 ; Yes        ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|smiley_move:inst|Xspeed[3]                                                                 ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |TOP_VGA_DEMO_KBD|lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_2e71:auto_generated|mux_jhb:mux2|l3_w0_n4_mux_dataout ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |TOP_VGA_DEMO_KBD|projectile_Block_T:inst2|projectile_move:inst|Selector9                                                         ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |TOP_VGA_DEMO_KBD|projectile_Block_T:inst2|projectile_move:inst|Selector56                                                        ;
+; 6:1                ; 11 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; No         ; |TOP_VGA_DEMO_KBD|projectile_Block_T:inst2|projectile_move:inst|Selector45                                                        ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|smileyBitMap:inst1|Mux98                                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1389,7 +1447,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Smiley_Block_T:inst9|square_object:inst6 ;
+; Parameter Settings for User Entity Instance: Smiley_Block_T:inst1|square_object:inst6 ;
 +-----------------+-------+-------------------------------------------------------------+
 ; Parameter Name  ; Value ; Type                                                        ;
 +-----------------+-------+-------------------------------------------------------------+
@@ -1401,7 +1459,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Smiley_Block_T:inst9|smiley_move:inst ;
+; Parameter Settings for User Entity Instance: Smiley_Block_T:inst1|smiley_move:inst ;
 +-----------------+-------+----------------------------------------------------------+
 ; Parameter Name  ; Value ; Type                                                     ;
 +-----------------+-------+----------------------------------------------------------+
@@ -1409,6 +1467,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; INITIAL_Y       ; 420   ; Signed Integer                                           ;
 ; INITIAL_X_SPEED ; 40    ; Signed Integer                                           ;
 +-----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: projectile_Block_T:inst2|projectile_object:inst1 ;
++-----------------+----------+------------------------------------------------------------------+
+; Parameter Name  ; Value    ; Type                                                             ;
++-----------------+----------+------------------------------------------------------------------+
+; OBJECT_WIDTH_X  ; 32       ; Signed Integer                                                   ;
+; OBJECT_HEIGHT_Y ; 32       ; Signed Integer                                                   ;
+; OBJECT_COLOR    ; 01011011 ; Unsigned Binary                                                  ;
++-----------------+----------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: projectile_Block_T:inst2|projectile_move:inst ;
++-----------------+-------+------------------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                             ;
++-----------------+-------+------------------------------------------------------------------+
+; INITIAL_Y_SPEED ; 10    ; Signed Integer                                                   ;
++-----------------+-------+------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1429,6 +1509,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS    ; ON                 ; AUTO_CASCADE   ;
 ; IGNORE_CASCADE_BUFFERS ; OFF                ; IGNORE_CASCADE ;
 +------------------------+--------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: back_ground_draw:inst4 ;
++---------------------+-------------+---------------------------------+
+; Parameter Name      ; Value       ; Type                            ;
++---------------------+-------------+---------------------------------+
+; COLOR_MATRIX_TOP_Y  ; 00001100100 ; Unsigned Binary                 ;
+; COLOR_MATRIX_LEFT_X ; 00001100100 ; Unsigned Binary                 ;
++---------------------+-------------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1540,41 +1631,42 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 185                         ;
-;     CLR               ; 59                          ;
+; arriav_ff             ; 273                         ;
+;     CLR               ; 85                          ;
 ;     CLR SCLR          ; 11                          ;
+;     CLR SLD           ; 8                           ;
 ;     ENA               ; 11                          ;
-;     ENA CLR           ; 5                           ;
-;     ENA CLR SCLR      ; 44                          ;
-;     ENA CLR SLD       ; 29                          ;
-;     ENA SCLR          ; 17                          ;
-;     plain             ; 9                           ;
+;     ENA CLR           ; 4                           ;
+;     ENA CLR SCLR      ; 72                          ;
+;     ENA CLR SLD       ; 33                          ;
+;     ENA SCLR          ; 39                          ;
+;     plain             ; 10                          ;
 ; arriav_io_obuf        ; 8                           ;
-; arriav_lcell_comb     ; 590                         ;
-;     arith             ; 150                         ;
-;         0 data inputs ; 3                           ;
-;         1 data inputs ; 89                          ;
-;         2 data inputs ; 31                          ;
-;         4 data inputs ; 9                           ;
-;         5 data inputs ; 18                          ;
-;     extend            ; 10                          ;
-;         7 data inputs ; 10                          ;
-;     normal            ; 430                         ;
+; arriav_lcell_comb     ; 1121                        ;
+;     arith             ; 284                         ;
+;         0 data inputs ; 6                           ;
+;         1 data inputs ; 189                         ;
+;         2 data inputs ; 37                          ;
+;         4 data inputs ; 19                          ;
+;         5 data inputs ; 33                          ;
+;     extend            ; 16                          ;
+;         7 data inputs ; 16                          ;
+;     normal            ; 821                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 10                          ;
-;         2 data inputs ; 18                          ;
-;         3 data inputs ; 39                          ;
-;         4 data inputs ; 46                          ;
-;         5 data inputs ; 65                          ;
-;         6 data inputs ; 250                         ;
+;         1 data inputs ; 11                          ;
+;         2 data inputs ; 88                          ;
+;         3 data inputs ; 133                         ;
+;         4 data inputs ; 86                          ;
+;         5 data inputs ; 135                         ;
+;         6 data inputs ; 366                         ;
 ; blackbox              ; 1                           ;
 ;         BDINTF:inst   ; 1                           ;
 ; boundary_port         ; 54                          ;
 ; generic_pll           ; 1                           ;
 ; stratixv_ram_block    ; 304                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.90                        ;
-; Average LUT depth     ; 3.33                        ;
+; Max LUT depth         ; 7.50                        ;
+; Average LUT depth     ; 3.71                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1583,7 +1675,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -1662,7 +1754,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Jul 08 15:46:40 2024
+    Info: Processing started: Mon Jul 08 23:43:59 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab1Demo -c Lab1Demo
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file kbdintf.qxp
@@ -1733,6 +1825,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file clk_31p
 Info (12021): Found 1 design units, including 1 entities, in source file clk_31p5/clk_31p5_0002.v
     Info (12023): Found entity 1: CLK_31P5_0002 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/CLK_31P5/CLK_31P5_0002.v Line: 2
 Info (12021): Found 0 design units, including 0 entities, in source file rtl/vga/spaceship_projectile.sv
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/vga/projectile_move.sv
+    Info (12023): Found entity 1: projectile_move File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/vga/projectile_object.sv
+    Info (12023): Found entity 1: projectile_object File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_object.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/projectile_bitmap.sv
+    Info (12023): Found entity 1: projectileBitMap File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/projectile_block_t.bdf
+    Info (12023): Found entity 1: projectile_Block_T
 Warning (10236): Verilog HDL Implicit Net warning at audio_codec_controller.sv(61): created implicit net for "CLOCK_500_ena" File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/audio_codec_controller/audio_codec_controller.sv Line: 61
 Warning (10236): Verilog HDL Implicit Net warning at audio_codec_controller.sv(63): created implicit net for "CLOCK_SDAT_ena" File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/audio_codec_controller/audio_codec_controller.sv Line: 63
 Info (12127): Elaborating entity "TOP_VGA_DEMO_KBD" for the top level hierarchy
@@ -1745,7 +1845,6 @@ Warning (275004): Undeclared parameter OFF
 Warning (275006): Can't find a definition for parameter IGNORE_CARRY_BUFFERS -- assuming OFF was intended to be a quoted string
 Warning (275004): Undeclared parameter OFF
 Warning (275006): Can't find a definition for parameter IGNORE_CASCADE_BUFFERS -- assuming OFF was intended to be a quoted string
-Warning (275011): Block or symbol "objects_mux" of instance "inst19" overlaps another block or symbol
 Info (12128): Elaborating entity "AUDIO" for hierarchy "AUDIO:inst18"
 Info (12128): Elaborating entity "audio_codec_controller" for hierarchy "AUDIO:inst18|audio_codec_controller:inst"
 Warning (10230): Verilog HDL assignment warning at audio_codec_controller.sv(69): truncated value with size 32 to match size of target (1) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/audio_codec_controller/audio_codec_controller.sv Line: 69
@@ -1837,18 +1936,21 @@ Info (12133): Instantiated megafunction "CLK_31P5:inst7|CLK_31P5_0002:clk_31p5_i
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
 Info (12128): Elaborating entity "game_controller" for hierarchy "game_controller:inst20"
+Warning (10036): Verilog HDL or VHDL warning at game_controller.sv(87): object "collision_smiley_number" assigned a value but never read File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/game_controller.sv Line: 87
+Warning (10858): Verilog HDL warning at game_controller.sv(88): object collision_smiley_projectile used but never assigned File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/game_controller.sv Line: 88
+Warning (10030): Net "collision_smiley_projectile" at game_controller.sv(88) has no driver or initial value, using a default initial value '0' File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/game_controller.sv Line: 88
 Info (12128): Elaborating entity "VGA_Controller" for hierarchy "VGA_Controller:inst"
 Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(61): truncated value with size 32 to match size of target (11) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/VGA_Controller.sv Line: 61
 Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(62): truncated value with size 32 to match size of target (11) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/VGA_Controller.sv Line: 62
 Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(64): truncated value with size 32 to match size of target (19) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/VGA_Controller.sv Line: 64
 Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(74): truncated value with size 11 to match size of target (1) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/VGA_Controller.sv Line: 74
 Info (12128): Elaborating entity "objects_mux" for hierarchy "objects_mux:inst19"
-Info (12128): Elaborating entity "Smiley_Block_T" for hierarchy "Smiley_Block_T:inst9"
-Info (12128): Elaborating entity "smileyBitMap" for hierarchy "Smiley_Block_T:inst9|smileyBitMap:inst1"
+Info (12128): Elaborating entity "Smiley_Block_T" for hierarchy "Smiley_Block_T:inst1"
+Info (12128): Elaborating entity "smileyBitMap" for hierarchy "Smiley_Block_T:inst1|smileyBitMap:inst1"
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "object_colors" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "hit_colors" into its bus
-Info (12128): Elaborating entity "square_object" for hierarchy "Smiley_Block_T:inst9|square_object:inst6"
-Info (12128): Elaborating entity "smiley_move" for hierarchy "Smiley_Block_T:inst9|smiley_move:inst"
+Info (12128): Elaborating entity "square_object" for hierarchy "Smiley_Block_T:inst1|square_object:inst6"
+Info (12128): Elaborating entity "smiley_move" for hierarchy "Smiley_Block_T:inst1|smiley_move:inst"
 Warning (10036): Verilog HDL or VHDL warning at smiley_move.sv(34): object "MAX_Y_SPEED" assigned a value but never read File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/smiley_move.sv Line: 34
 Warning (10036): Verilog HDL or VHDL warning at smiley_move.sv(47): object "y_FRAME_TOP" assigned a value but never read File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/smiley_move.sv Line: 47
 Warning (10036): Verilog HDL or VHDL warning at smiley_move.sv(48): object "y_FRAME_BOTTOM" assigned a value but never read File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/smiley_move.sv Line: 48
@@ -1859,6 +1961,140 @@ Info (12128): Elaborating entity "TOP_KBD" for hierarchy "TOP_KBD:inst16"
 Info (12128): Elaborating entity "keyPad_decoder" for hierarchy "TOP_KBD:inst16|keyPad_decoder:inst2"
 Warning (10230): Verilog HDL assignment warning at keyPad_decoder.sv(47): truncated value with size 32 to match size of target (4) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/KEYBOARDX/keyPad_decoder.sv Line: 47
 Info (12128): Elaborating entity "KBDINTF" for hierarchy "TOP_KBD:inst16|KBDINTF:inst"
+Info (12128): Elaborating entity "projectile_Block_T" for hierarchy "projectile_Block_T:inst2"
+Info (12128): Elaborating entity "projectileBitMap" for hierarchy "projectile_Block_T:inst2|projectileBitMap:inst2"
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "object_colors" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "hit_colors" into its bus
+Info (12128): Elaborating entity "projectile_object" for hierarchy "projectile_Block_T:inst2|projectile_object:inst1"
+Info (12128): Elaborating entity "projectile_move" for hierarchy "projectile_Block_T:inst2|projectile_move:inst"
+Warning (10036): Verilog HDL or VHDL warning at projectile_move.sv(25): object "MAX_Y_SPEED" assigned a value but never read File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 25
+Warning (10036): Verilog HDL or VHDL warning at projectile_move.sv(32): object "OBJECT_WIDTH_X" assigned a value but never read File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 32
+Warning (10240): Verilog HDL Always Construct warning at projectile_move.sv(56): inferring latch(es) for variable "SM_Motion", which holds its previous value in one or more paths through the always construct File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (10240): Verilog HDL Always Construct warning at projectile_move.sv(56): inferring latch(es) for variable "Yspeed", which holds its previous value in one or more paths through the always construct File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (10240): Verilog HDL Always Construct warning at projectile_move.sv(56): inferring latch(es) for variable "Xposition", which holds its previous value in one or more paths through the always construct File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (10240): Verilog HDL Always Construct warning at projectile_move.sv(56): inferring latch(es) for variable "Yposition", which holds its previous value in one or more paths through the always construct File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (10240): Verilog HDL Always Construct warning at projectile_move.sv(56): inferring latch(es) for variable "hit_reg", which holds its previous value in one or more paths through the always construct File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (10240): Verilog HDL Always Construct warning at projectile_move.sv(56): inferring latch(es) for variable "active", which holds its previous value in one or more paths through the always construct File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (10230): Verilog HDL assignment warning at projectile_move.sv(144): truncated value with size 32 to match size of target (11) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 144
+Warning (10230): Verilog HDL assignment warning at projectile_move.sv(145): truncated value with size 32 to match size of target (11) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 145
+Info (10041): Inferred latch for "active" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[0]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[1]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[2]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[3]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[4]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[5]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[6]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[7]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[8]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[9]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[10]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[11]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[12]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[13]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[14]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "hit_reg[15]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[0]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[1]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[2]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[3]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[4]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[5]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[6]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[7]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[8]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[9]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[10]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[11]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[12]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[13]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[14]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[15]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[16]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[17]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[18]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[19]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[20]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[21]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[22]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[23]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[24]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[25]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[26]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[27]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[28]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[29]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[30]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yposition[31]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[0]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[1]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[2]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[3]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[4]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[5]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[6]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[7]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[8]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[9]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[10]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[11]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[12]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[13]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[14]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[15]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[16]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[17]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[18]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[19]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[20]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[21]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[22]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[23]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[24]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[25]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[26]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[27]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[28]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[29]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[30]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Xposition[31]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[0]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[1]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[2]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[3]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[4]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[5]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[6]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[7]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[8]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[9]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[10]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[11]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[12]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[13]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[14]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[15]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[16]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[17]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[18]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[19]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[20]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[21]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[22]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[23]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[24]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[25]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[26]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[27]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[28]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[29]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[30]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "Yspeed[31]" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "SM_Motion.POSITION_LIMITS_ST" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "SM_Motion.POSITION_CHANGE_ST" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "SM_Motion.START_OF_FRAME_ST" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "SM_Motion.MOVE_ST" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Info (10041): Inferred latch for "SM_Motion.IDLE_ST" at projectile_move.sv(56) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
 Info (12128): Elaborating entity "lpm_rom" for hierarchy "lpm_rom:inst5"
 Info (12130): Elaborated megafunction instantiation "lpm_rom:inst5"
 Info (12133): Instantiated megafunction "lpm_rom:inst5" with the following parameter:
@@ -1886,6 +2122,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/mux_
     Info (12023): Found entity 1: mux_jhb File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/db/mux_jhb.tdf Line: 23
 Info (12128): Elaborating entity "mux_jhb" for hierarchy "lpm_rom:inst5|altrom:srom|altsyncram:rom_block|altsyncram_2e71:auto_generated|mux_jhb:mux2" File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/db/altsyncram_2e71.tdf Line: 41
 Info (12128): Elaborating entity "SEG7" for hierarchy "SEG7:inst10"
+Info (12128): Elaborating entity "back_ground_draw" for hierarchy "back_ground_draw:inst4"
+Warning (10036): Verilog HDL or VHDL warning at back_ground_draw.sv(19): object "COLOR_MARTIX_SIZE" assigned a value but never read File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/back_ground_draw.sv Line: 19
+Warning (10230): Verilog HDL assignment warning at back_ground_draw.sv(57): truncated value with size 3 to match size of target (2) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/back_ground_draw.sv Line: 57
+Warning (10230): Verilog HDL assignment warning at back_ground_draw.sv(74): truncated value with size 3 to match size of target (2) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/back_ground_draw.sv Line: 74
+Warning (10230): Verilog HDL assignment warning at back_ground_draw.sv(85): truncated value with size 32 to match size of target (11) File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/back_ground_draw.sv Line: 85
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ch84.tdf
     Info (12023): Found entity 1: altsyncram_ch84 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/db/altsyncram_ch84.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_dlc.tdf
@@ -1908,7 +2149,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/db/cmpr_99c.tdf Line: 23
 Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2024.07.08.15:47:10 Progress: Loading sld6dfc5e3d/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2024.07.08.23:44:21 Progress: Loading sld6dfc5e3d/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1951,6 +2192,102 @@ Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "AUDOUT" has no driver
     Warning (13040): bidirectional pin "AUDOUT" has no driver
     Warning (13040): bidirectional pin "AUDOUT" has no driver
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "projectile_Block_T:inst2|projectile_move:inst|Yspeed[3]" merged with LATCH primitive "projectile_Block_T:inst2|projectile_move:inst|Yspeed[1]" File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|active has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.MOVE_ST_2114 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|SM_Motion.MOVE_ST_2114 has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal VGA_Controller:inst|startOfFrame File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/VGA_Controller.sv Line: 16
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|SM_Motion.IDLE_ST_2127 has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal VGA_Controller:inst|startOfFrame File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/VGA_Controller.sv Line: 16
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|SM_Motion.START_OF_FRAME_ST_2101 has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal VGA_Controller:inst|startOfFrame File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/VGA_Controller.sv Line: 16
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[4] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[3] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[2] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[1] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[0] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[6] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[7] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[8] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[9] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[10] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[11] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[12] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[13] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[14] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[15] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|hit_reg[5] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectileBitMap:inst2|HitEdgeCode[3] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv Line: 99
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[16] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[15] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[14] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[13] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[12] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[11] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[10] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[9] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[8] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[7] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[6] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[31] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[30] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[17] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[18] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[19] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[20] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[21] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[22] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[23] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[24] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[25] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[26] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[27] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[28] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yposition[29] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal projectile_Block_T:inst2|projectile_move:inst|SM_Motion.POSITION_LIMITS_ST_2075 File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+Warning (13012): Latch projectile_Block_T:inst2|projectile_move:inst|Yspeed[1] has unsafe behavior File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv Line: 56
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal TOP_KBD:inst16|keyPad_decoder:inst2|keyIsPressed[14] File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/KEYBOARDX/keyPad_decoder.sv Line: 42
 Warning (13009): TRI or OPNDRN buffers permanently enabled
     Warning (13010): Node "AUDOUT~synth"
     Warning (13010): Node "AUDOUT~synth"
@@ -1961,7 +2298,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "greenLight" is stuck at GND
     Warning (13410): Pin "OVGA[26]" is stuck at VCC
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
-Info (17049): 41 registers lost all their fanouts during netlist optimizations.
+Info (17049): 35 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/Lab1Demo.map.smsg
 Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 37 of its 61 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 24 missing sources or connections.
 Info (35026): Attempting to remove 26 I/O cell(s) that do not connect to top-level pins or have illegal connectivity
@@ -1995,18 +2332,18 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 17 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "AUD_ADCDAT"
-Info (21057): Implemented 1818 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2348 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 40 output pins
     Info (21060): Implemented 8 bidirectional pins
-    Info (21061): Implemented 1442 logic cells
+    Info (21061): Implemented 1972 logic cells
     Info (21064): Implemented 318 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 71 warnings
-    Info: Peak virtual memory: 5020 megabytes
-    Info: Processing ended: Mon Jul 08 15:47:26 2024
-    Info: Elapsed time: 00:00:46
-    Info: Total CPU time (on all processors): 00:00:59
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 181 warnings
+    Info: Peak virtual memory: 5024 megabytes
+    Info: Processing ended: Mon Jul 08 23:44:36 2024
+    Info: Elapsed time: 00:00:37
+    Info: Total CPU time (on all processors): 00:00:53
 
 
 +------------------------------------------+

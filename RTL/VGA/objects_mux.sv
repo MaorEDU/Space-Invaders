@@ -16,8 +16,8 @@ module	objects_mux	(
 					input		logic	[7:0] smileyRGB, 
 					     
 		  // box here 
-					input 	logic boxDrawingRequest,
-					input 	logic[7:0]  boxRGB,
+					input 	logic projectileDrawingRequest,
+					input 	logic[7:0]  projectileRGB,
 					
 		  
 		  
@@ -44,8 +44,8 @@ begin
 		if (smileyDrawingRequest == 1'b1 )   
 			RGBOut <= smileyRGB;  //fSirst priority 
 		 
-		 else if(boxDrawingRequest == 1'b1)
-			RGBOut <= boxRGB; //second priority
+		 else if(projectileDrawingRequest == 1'b1)
+			RGBOut <= projectileRGB; //second priority
 		 
 //--------------------------------------------------------------------------------------------		
 

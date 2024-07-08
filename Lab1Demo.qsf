@@ -352,6 +352,10 @@ set_global_assignment -name QIP_FILE CLK_31P5.qip
 set_global_assignment -name SIP_FILE CLK_31P5.sip
 set_global_assignment -name SIGNALTAP_FILE stp1.stp
 set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/spaceship_projectile.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/projectile_move.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/projectile_object.sv
+set_global_assignment -name SYSTEMVERILOG_FILE output_files/projectile_bitmap.sv
+set_global_assignment -name BDF_FILE output_files/projectile_Block_T.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

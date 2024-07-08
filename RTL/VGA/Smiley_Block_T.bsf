@@ -83,16 +83,30 @@ agreement for further details.
 	(port
 		(pt 256 32)
 		(output)
-		(text "smileyDR" (rect 0 0 56 19)(font "Intel Clear" (font_size 8)))
-		(text "smileyDR" (rect 179 27 235 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 256 32)(pt 240 32))
+		(text "ship_x[10..0]" (rect 0 0 76 19)(font "Intel Clear" (font_size 8)))
+		(text "ship_x[10..0]" (rect 159 27 235 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 256 32)(pt 240 32)(line_width 3))
 	)
 	(port
 		(pt 256 48)
 		(output)
-		(text "smileyRGB[7..0]" (rect 0 0 95 19)(font "Intel Clear" (font_size 8)))
-		(text "smileyRGB[7..0]" (rect 140 43 235 62)(font "Intel Clear" (font_size 8)))
+		(text "ship_y[10..0]" (rect 0 0 77 19)(font "Intel Clear" (font_size 8)))
+		(text "ship_y[10..0]" (rect 158 43 235 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 256 48)(pt 240 48)(line_width 3))
+	)
+	(port
+		(pt 256 64)
+		(output)
+		(text "smileyDR" (rect 0 0 56 19)(font "Intel Clear" (font_size 8)))
+		(text "smileyDR" (rect 179 59 235 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 256 64)(pt 240 64))
+	)
+	(port
+		(pt 256 80)
+		(output)
+		(text "smileyRGB[7..0]" (rect 0 0 95 19)(font "Intel Clear" (font_size 8)))
+		(text "smileyRGB[7..0]" (rect 140 75 235 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 256 80)(pt 240 80)(line_width 3))
 	)
 	(parameter
 		"initial_x"

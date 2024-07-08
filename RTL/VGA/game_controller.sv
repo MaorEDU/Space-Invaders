@@ -14,7 +14,7 @@ module	game_controller	(
 
 //---------------------#1-add input drawing request of box/number
 		
-			input logic drawing_request_number,
+			input logic drawing_request_projectile,
 		
 
 //---------------------#1-end input drawing request of box/number
@@ -56,7 +56,7 @@ module	game_controller	(
 //---------------------#4-update  collision  conditions - add collision between smiley and number   ----------------------------
 
 //assign collision = <collision_before> +<collision smiley and number>;
-assign collision =  (drawing_request_smiley && drawing_request_number) ||(drawing_request_smiley && drawing_request_boarders) ;
+assign collision =  (drawing_request_smiley && drawing_request_projectile) ||(drawing_request_smiley && drawing_request_boarders) ;
 
 //---------------------#4-end update  collision  conditions	 - add collision between smiley and number	-------------------------
 	
@@ -85,7 +85,7 @@ assign collision =  (drawing_request_smiley && drawing_request_number) ||(drawin
 
 logic flag ; // a semaphore to set the output only once per frame regardless of number of collisions 
 logic collision_smiley_number; // collision between Smiley and number - is not output
-
+logic collision_smiley_projectile;
 
 always_ff@(posedge clk or negedge resetN)
 begin
@@ -99,7 +99,7 @@ begin
 	
 //-------------------------- #7-add colision between Smiley and number-----------------
 
-if (drawing_request_smiley && drawing_request_number && flag == 1'b0) begin
+if (drawing_request_smiley && drawing_request_projectile && flag == 1'b0) begin
 			flag <= 1'b1;
 			SingleHitPulse <= 1'b1;
 			collision_smiley_number = 1'b1;
@@ -114,7 +114,7 @@ if (drawing_request_smiley && drawing_request_number && flag == 1'b0) begin
 				
 //	---#7 - change the condition below to collision between Smiley and number ---------
 
-if (collision_smiley_number  && collision) begin 
+if (collision_smiley_projectile  && collision) begin 
 			flag	<= 1'b1; // to enter only once 
 			SingleHitPulse <= 1'b1 ; 
 		end 

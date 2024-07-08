@@ -1,0 +1,35 @@
+module projectile_object(
+    input logic clk,
+    input logic resetN,
+    input logic fire,             // Signal to fire the projectile
+    input logic [10:0] ship_x,     // X position of the spaceship
+    input logic [10:0] ship_y,     // Y position of the spaceship
+    output logic [10:0] proj_x,    // X position of the projectile
+    output logic [10:0] proj_y,    // Y position of the projectile
+    output logic [7:0] proj_color // 8-bit color of the projectile
+);
+
+    logic proj_active;
+
+    // Instantiate the projectile_move module
+    projectile_move u_projectile_move (
+        .clk(clk),
+        .resetN(resetN),
+        .fire(fire),
+        .ship_x(ship_x),
+        .ship_y(ship_y),
+        .proj_x(proj_x),
+        .proj_y(proj_y),
+        .proj_active(proj_active)
+    );
+
+    // Set the color based on the active state
+    always_comb begin
+        if (proj_active) begin
+            proj_color = 8'b11111111; // Set color to white when active (R=111, G=111, B=111)
+        end else begin
+            proj_color = 8'hFF; // Set color to transparent when inactive
+        end
+    end
+
+endmodule
