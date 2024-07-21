@@ -1,8 +1,0 @@
-
-State Machine - |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst1|smiley_move:inst|SM_Motion
-Name SM_Motion.POSITION_CHANGE_ST SM_Motion.START_OF_FRAME_ST SM_Motion.MOVE_ST SM_Motion.IDLE_ST SM_Motion.POSITION_LIMITS_ST 
-SM_Motion.IDLE_ST 0 0 0 0 0 
-SM_Motion.MOVE_ST 0 0 1 1 0 
-SM_Motion.START_OF_FRAME_ST 0 1 0 1 0 
-SM_Motion.POSITION_CHANGE_ST 1 0 0 1 0 
-SM_Motion.POSITION_LIMITS_ST 0 0 0 1 1 
