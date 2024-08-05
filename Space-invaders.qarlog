@@ -1,0 +1,97 @@
+Quartus Prime Archive log --	C:/Users/maora/Desktop/Technion/lab/Space-Invaders/space-invaders.qarlog
+
+Archive:	C:/Users/maora/Desktop/Technion/lab/Space-Invaders/space-invaders.qar
+Date:		Mon Aug 05 22:47:09 2024
+Quartus Prime		17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/CLK_31P5.cmp
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/CLK_31P5.qip
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/CLK_31P5.sip
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/CLK_31P5.spd
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/CLK_31P5.v
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/CLK_31P5/CLK_31P5_0002.qip
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/CLK_31P5/CLK_31P5_0002.v
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/CLK_31P5_sim/CLK_31P5.vo
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/DE10_Standard_Audio.sdc
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/KBDINTF.qxp
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Lab1Demo.qpf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Lab1Demo.qsf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Lab1Demo_assignment_defaults.qdf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_position.bsf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_position.qip
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_position.v
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_positionB.bsf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_positionB.qip
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_positionB.v
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_positionC.bsf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_positionC.qip
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_positionC.v
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/AUDIO.bdf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/SinTable.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/TOP_AUDIO.bdf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/ToneDecoder.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/addr_counter.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/audio_codec_controller/DualSerial2parallel.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/audio_codec_controller/audio_codec_controller.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/audio_codec_controller/clock_500.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/audio_codec_controller/i2c.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/prescaler.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/KEYBOARDX/TOP_KBD.bdf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/KEYBOARDX/keyPad_decoder.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/KEYBOARDX/random.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/KEYBOARDX/simple_up_counter.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/Seg7/SEG7.SV
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/Seg7/hexss.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/Seg7/multi_hex.bdf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/Seg7/multi_hex.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/Banana.bdf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/BananaBitMap.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/NumbersBitMap.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/NumbersBitMapSecond.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/SCORE_DISPLAY.bdf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/SHIELD_DISPLAY.bdf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/ShieldMatrixBitMap.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/Smiley_Block_T.bdf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/Spaceship_Block_T.bdf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/VGA_Controller.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/back_ground_draw.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/bananaMove.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/game_controller.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/monster_health_bar.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/objects_mux.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/playerHP.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/player_hp_object.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_move.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/projectile_object.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/shieldMatrixBitMap.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/spaceshipBitMap.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/spaceship_move.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/spaceship_projectile.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/square_Hart_object.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/square_object.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/valX.bsf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/valX.qip
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/valX.v
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/valX_bb.v
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/valX_inst.v
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/background.mif
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/bcddn.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/down_counter.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/down_counter_2.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/one_sec_counter.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/random_two.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/assignment_defaults.qdf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/constraints/DE10_Standard_Audio.sdc
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/constraints/pin.tcl
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/db/stp1_auto_stripped.stp
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/matrix_top_xy.v
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/Chain1.cdf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_Block_T.bdf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/stp1.stp
+	======= Total: 86 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

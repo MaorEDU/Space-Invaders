@@ -1,0 +1,40 @@
+module health_bar_vga(
+    input	logic	clk,
+	 input	logic	resetN,
+	 input logic	[10:0] offsetX,// offset from top left  position 
+	 input logic	[10:0] offsetY,
+	 input logic got_hit,
+	
+	output	logic	drawingRequest, //output that the pixel should be dispalyed 
+	output	logic	[7:0] RGBout  //rgb value from the bitmap 
+ ) ;
+	 
+    parameter MAX_HEALTH = 255;
+    parameter BAR_WIDTH = 100;        // Width of the health bar
+    parameter BAR_HEIGHT = 10;        // Height of the health bar
+
+    logic [9:0] bar_width_scaled;
+
+    always_ff @(posedge clk or negedge resetN) begin
+        if (!resetN) begin
+            bar_width_scaled <= 0;
+        end else begin
+            bar_width_scaled <= (health * BAR_WIDTH) / MAX_HEALTH;
+        end
+    end
+
+    // Example VGA drawing logic
+    always_comb begin
+        vga_color = 8'b00000000;  // Default to black
+        for (int x = 0; x < BAR_WIDTH; x++) begin
+            for (int y = 0; y < BAR_HEIGHT; y++) begin
+                if (x < bar_width_scaled) begin
+                    vga_x = x;
+                    vga_y = y;
+                    vga_color = 8'b11111111; // Set color to white (or any other color for the health bar)
+                end
+            end
+        end
+    end
+
+endmodule
