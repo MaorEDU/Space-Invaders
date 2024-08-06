@@ -293,5 +293,5 @@ begin
 end
 
 	assign Q = {tmp8bit[7],tmp8bit[7:0], {7{tmp8bit[7]}} }  ; // multiply by 256
-   assign end_of_wave =table_size;
+   //assign end_of_wave =table_size;
 endmodule

@@ -4,11 +4,11 @@
 // Implements a 4 bits down counter 9  down to 0 with several enable inputs and loadN data.
 // It outputs count and asynchronous terminal count, tc, signal 
 
-module down_counter_2
+module down_counter_sound
 	(
 	input logic clk, 
-	input logic resetN, 
-	
+	input logic resetN,
+	output logic [3:0] tone,
 	output logic tc
    );
 
@@ -18,15 +18,20 @@ always_ff @(posedge clk or negedge resetN)
    begin
 	      
       if ( !resetN )	begin// Asynchronic reset
-			count <= 4'h4;
-		
+			count <= 4'h2;
+			tone <= 4'h0;
 		end
 					// Synchronic logic	
 		 else if(count == 4'h0) begin 
-					count <= 4'h4; //9
+					count <= 4'h2;//9
+					tone <= tone;
 			end
 		else begin 
 				count <= count-1; //Decrement
+				if (tone < 9)
+					tone <= tone +1;
+				else 
+					tone <= 4'h0;
 			end
 		 //Synch
 	end //always

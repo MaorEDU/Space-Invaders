@@ -118,22 +118,6 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect -104 160 64 176)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "fire" (rect 5 0 21 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 88 -16 256 0)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "ship_x[10..0]" (rect 5 0 68 12)(font "Arial" ))
@@ -163,6 +147,22 @@ agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -128 160 64 176)
+	(text "INPUT" (rect 149 0 177 10)(font "Arial" (font_size 6)))
+	(text "keyIsPressed[9..0]" (rect 5 0 100 12)(font "Arial" ))
+	(pt 192 8)
+	(drawing
+		(line (pt 108 12)(pt 133 12))
+		(line (pt 108 4)(pt 133 4))
+		(line (pt 137 8)(pt 192 8))
+		(line (pt 108 12)(pt 108 4))
+		(line (pt 133 4)(pt 137 8))
+		(line (pt 133 12)(pt 137 8))
+	)
+	(text "VCC" (rect 152 7 172 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
@@ -382,9 +382,9 @@ agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "fire" (rect 0 0 16 12)(font "Arial" ))
-		(text "fire" (rect 21 59 37 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
+		(text "keyIsPressed[9..0]" (rect 0 0 94 12)(font "Arial" ))
+		(text "keyIsPressed[9..0]" (rect 21 59 115 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 0 80)
@@ -432,21 +432,21 @@ agreement for further details.
 		(pt 224 32)
 		(output)
 		(text "active" (rect 0 0 30 12)(font "Arial" ))
-		(text "active" (rect 178 27 208 39)(font "Arial" ))
+		(text "active" (rect 178 27 203 39)(font "Arial" ))
 		(line (pt 224 32)(pt 208 32))
 	)
 	(port
 		(pt 224 48)
 		(output)
 		(text "proj_x[10..0]" (rect 0 0 61 12)(font "Arial" ))
-		(text "proj_x[10..0]" (rect 152 43 213 55)(font "Arial" ))
+		(text "proj_x[10..0]" (rect 152 43 203 55)(font "Arial" ))
 		(line (pt 224 48)(pt 208 48)(line_width 3))
 	)
 	(port
 		(pt 224 64)
 		(output)
 		(text "proj_y[10..0]" (rect 0 0 62 12)(font "Arial" ))
-		(text "proj_y[10..0]" (rect 151 59 213 71)(font "Arial" ))
+		(text "proj_y[10..0]" (rect 151 59 203 71)(font "Arial" ))
 		(line (pt 224 64)(pt 208 64)(line_width 3))
 	)
 	(parameter
@@ -478,10 +478,6 @@ agreement for further details.
 (connector
 	(pt 64 152)
 	(pt 200 152)
-)
-(connector
-	(pt 64 168)
-	(pt 200 168)
 )
 (connector
 	(pt 72 184)
@@ -630,6 +626,11 @@ agreement for further details.
 (connector
 	(pt 800 192)
 	(pt 1088 192)
+	(bus)
+)
+(connector
+	(pt 200 168)
+	(pt 64 168)
 	(bus)
 )
 (text " " (rect -32 88 -30 105)(font "Intel Clear" ))

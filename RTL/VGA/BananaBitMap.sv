@@ -95,6 +95,5 @@ end
 
 //////////--------------------------------------------------------------------------------------------------------------=
 // decide if to draw the pixel or not 
-assign drawingRequest = RGBout != TRANSPARENT_ENCODING  ? 1'b1 : 1'b0; // get optional transparent command from the bitmpap  removed appear
-
+assign drawingRequest = ((RGBout != TRANSPARENT_ENCODING) && appear)  ? 1'b1 : 1'b0 ; // get optional transparent command from the bitmpap  removed appear
 endmodule

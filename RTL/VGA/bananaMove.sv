@@ -54,6 +54,7 @@ always_ff @(posedge clk or negedge resetN) begin : fsm_sync_proc
         Yposition <= 0; 
         hit_reg <= 16'b0;
 		  flag <= 0; 
+		  active <= 0;
     end else begin
         
 		  case (SM_Motion)
@@ -84,7 +85,9 @@ always_ff @(posedge clk or negedge resetN) begin : fsm_sync_proc
             end 
 
             START_OF_FRAME_ST: begin
-                case (hit_reg)
+               
+					 
+					 case (hit_reg)
                     16'h0000: begin // no collision in the frame 
                         Yspeed <= Yspeed;
                         Xspeed <= Xspeed;
@@ -110,8 +113,8 @@ always_ff @(posedge clk or negedge resetN) begin : fsm_sync_proc
                             Yspeed <= -Yspeed;
                     end
                     default: begin // complex corner 
-                        Yspeed <= Yspeed;
-                        Xspeed <= Xspeed;
+                        Yspeed <= -Yspeed;
+                        Xspeed <= -Xspeed;
 								active <= active;
                     end
                 endcase

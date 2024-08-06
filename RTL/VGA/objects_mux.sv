@@ -52,13 +52,14 @@ begin
 	else begin
 		if (spaceshipDrawingRequest == 1'b1 )   
 			RGBOut <= spaceshipRGB;  //fSirst priority 
-	else if(bananaDrawingRequest == 1'b1)
-				RGBOut <= bananaRGB;
+	
 			
    	else if(drawingRequestHP == 1'b1) 
 				RGBOut <= playerHP_RGB;
 		else if (drawingRequestHP2 == 1'b1)
 				RGBOut <= playerHP2_RGB;
+				else if(bananaDrawingRequest == 1'b1)
+				RGBOut <= bananaRGB;
 		 else if(projectileDrawingRequest == 1'b1)
 			RGBOut <= projectileRGB; //second priority
 		 	

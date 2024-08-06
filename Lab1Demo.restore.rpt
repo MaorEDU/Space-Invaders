@@ -1,5 +1,5 @@
 Restore Archived Project report for Lab1Demo
-Sun Jul 21 11:36:51 2024
+Tue Aug 06 19:54:48 2024
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Sun Jul 21 11:36:51 2024 ;
+; Restore Archived Project Status ; Successful - Tue Aug 06 19:54:48 2024 ;
 ; Revision Name                   ; Lab1Demo                              ;
 ; Top-level Entity Name           ; TOP_VGA_DEMO_KBD                      ;
 ; Family                          ; Cyclone V                             ;
@@ -47,25 +47,18 @@ agreement for further details.
 +-----------------------------------+
 ; Restore Archived Project Messages ;
 +-----------------------------------+
-Info: Successfully restored 'C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Space-invader.qar' into the 'C:\\Users\\maora\\Desktop\\Technion\\lab\\Space-Invaders/' directory
+Info: Successfully restored 'C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Lab1Demo.qar' into the 'C:\\Users\\maora\\Desktop\\Technion\\lab\\Space-Invaders/' directory
 Info: Generated report 'Lab1Demo.restore.rpt'
 Info (23030): Evaluation of Tcl script c:/users/maora/desktop/technion/lab/quartus/common/tcl/apps/qpm/qar.tcl was successful
-Info: Quartus Prime Shell was successful. 0 errors, 70 warnings
-    Info: Peak virtual memory: 4748 megabytes
-    Info: Processing ended: Sun Jul 21 11:36:51 2024
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4753 megabytes
+    Info: Processing ended: Tue Aug 06 19:54:48 2024
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
-
-
-+----------------+
-; Files Restored ;
-+----------------+
-; File Name      ;
-+----------------+
+    Info: Total CPU time (on all processors): 00:00:02
 
 
 +------------------------------------------------------------+
-; Files Not Restored                                         ;
+; Files Restored                                             ;
 +------------------------------------------------------------+
 ; File Name                                                  ;
 +------------------------------------------------------------+
@@ -86,7 +79,12 @@ Info: Quartus Prime Shell was successful. 0 errors, 70 warnings
 ; Number_position.bsf                                        ;
 ; Number_position.qip                                        ;
 ; Number_position.v                                          ;
-; Number_position_bb.v                                       ;
+; Number_positionB.bsf                                       ;
+; Number_positionB.qip                                       ;
+; Number_positionB.v                                         ;
+; Number_positionC.bsf                                       ;
+; Number_positionC.qip                                       ;
+; Number_positionC.v                                         ;
 ; RTL/AUDIO/AUDIO.bdf                                        ;
 ; RTL/AUDIO/SinTable.sv                                      ;
 ; RTL/AUDIO/TOP_AUDIO.bdf                                    ;
@@ -105,20 +103,27 @@ Info: Quartus Prime Shell was successful. 0 errors, 70 warnings
 ; RTL/Seg7/hexss.sv                                          ;
 ; RTL/Seg7/multi_hex.bdf                                     ;
 ; RTL/Seg7/multi_hex.sv                                      ;
-; RTL/VGA/HART_DISPLAY.bdf                                   ;
-; RTL/VGA/HartsMatrixBitMap.sv                               ;
+; RTL/VGA/Banana.bdf                                         ;
+; RTL/VGA/BananaBitMap.sv                                    ;
 ; RTL/VGA/NumbersBitMap.sv                                   ;
+; RTL/VGA/NumbersBitMapSecond.sv                             ;
+; RTL/VGA/SCORE_DISPLAY.bdf                                  ;
+; RTL/VGA/SHIELD_DISPLAY.bdf                                 ;
+; RTL/VGA/ShieldMatrixBitMap.sv                              ;
 ; RTL/VGA/Smiley_Block_T.bdf                                 ;
 ; RTL/VGA/Spaceship_Block_T.bdf                              ;
 ; RTL/VGA/TOP_VGA_DEMO_KBD.bdf                               ;
 ; RTL/VGA/VGA_Controller.sv                                  ;
 ; RTL/VGA/back_ground_draw.sv                                ;
+; RTL/VGA/bananaMove.sv                                      ;
 ; RTL/VGA/game_controller.sv                                 ;
 ; RTL/VGA/monster_health_bar.sv                              ;
 ; RTL/VGA/objects_mux.sv                                     ;
 ; RTL/VGA/playerHP.sv                                        ;
+; RTL/VGA/player_hp_object.sv                                ;
 ; RTL/VGA/projectile_move.sv                                 ;
 ; RTL/VGA/projectile_object.sv                               ;
+; RTL/VGA/shieldMatrixBitMap.sv                              ;
 ; RTL/VGA/spaceshipBitMap.sv                                 ;
 ; RTL/VGA/spaceship_move.sv                                  ;
 ; RTL/VGA/spaceship_projectile.sv                            ;
@@ -130,14 +135,28 @@ Info: Quartus Prime Shell was successful. 0 errors, 70 warnings
 ; RTL/VGA/valX_bb.v                                          ;
 ; RTL/VGA/valX_inst.v                                        ;
 ; RTL/background.mif                                         ;
+; RTL/bcddn.sv                                               ;
+; RTL/down_counter.sv                                        ;
+; RTL/down_counter_2.sv                                      ;
+; RTL/down_counter_sound.sv                                  ;
+; RTL/one_sec_counter.sv                                     ;
+; RTL/random_two.sv                                          ;
 ; assignment_defaults.qdf                                    ;
 ; constraints/DE10_Standard_Audio.sdc                        ;
 ; constraints/pin.tcl                                        ;
 ; db/stp1_auto_stripped.stp                                  ;
+; matrix_top_xy.v                                            ;
 ; output_files/Chain1.cdf                                    ;
 ; output_files/projectile_Block_T.bdf                        ;
 ; output_files/projectile_bitmap.sv                          ;
 ; stp1.stp                                                   ;
 +------------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
 
 

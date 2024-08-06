@@ -1,7 +1,7 @@
 module projectile_move(
     input logic clk,
     input logic resetN,
-    input logic fire,             // Signal to fire the projectile
+    input logic [9:0] keyIsPressed,             // Signal to fire the projectile
 	 input  logic startOfFrame,      //short pulse every start of frame 30Hz 
     input  logic enable_sof,    // if want to stop the smiley move 
 	 input  logic collision,         //collision if smiley hits an object
@@ -85,7 +85,7 @@ always_ff @(posedge clk or negedge resetN) begin : fsm_sync_proc
                 end
 
                 // fire the projectile
-                if (fire && flag == 0) begin // Check if enter is pressed
+                if (keyIsPressed[8] && flag == 0) begin // Check if enter is pressed
 						  Yspeed <= -SPEED;
 						  active <= 1;
 						  flag <= 1;

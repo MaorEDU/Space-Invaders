@@ -5,11 +5,13 @@
 //-- Eyal Lev --change values to 31.5 MHz   Apr 2023
 
 module	ToneDecoder	(	
-					input	logic [3:0] tone, 
 					input logic clk,
 					input logic resetN,
-					input logic end_of_wave,
-					output	logic [9:0]	preScaleValue
+					input logic [9:0] keyIsPressed,
+					input logic collision_bullet,
+					input logic monster_fire,
+					output	logic [9:0]	preScaleValue,
+					output logic enabler
 		);
 
 logic [15:0] [9:0]	preScaleValueTable = { 
@@ -36,21 +38,53 @@ logic [15:0] [9:0]	preScaleValueTable = {
 //10'h1A2,   // decimal =418.98      Hz =233.08  laD
 //10'h18B} ; // decimal =395.46      Hz =246.94  si
 
-assign 	preScaleValue = preScaleValueTable [tone] ; 
-    // Tone generation logic
-/*	 int inproccess;
-    always_ff @(posedge slow_clk or negedge resetN) begin
-        if (!resetN) begin
-            preScaleValue <= preScaleValueTable[0];
-				inproccess <= 1'b1;
-        end else begin
-				if (inproccess == end_of_wave) begin
-					preScaleValue <= preScaleValueTable[1];
-					inproccess <= 1'b1;
-					end
-        end
+
+ typedef enum logic [2:0] {
+    IDLE_ST,           // initial state
+    SOUND_ST           // moving no collision 
+} state_t;
+
+state_t SM_Sound;
+
+
+always_ff @(posedge clk or negedge resetN) begin : fsm_sync_proc
+    if (resetN == 1'b0) begin 
+        enabler <= 1'b0;
+		  preScaleValue = preScaleValueTable [0];
+    end else begin
+        case (SM_Sound)
+            //------------
+            IDLE_ST: begin
+                enabler <= 1'b0;
+					 preScaleValue = preScaleValueTable[0];
+                if (collision_bullet == 1'b1) begin
+						preScaleValue = preScaleValueTable[1];
+						enabler <= 1'b1;
+						SM_Sound <= SOUND_ST;
+						end
+                else if (keyIsPressed[8]) begin
+                    preScaleValue = preScaleValueTable[3];
+					     enabler <= 1'b1;
+						  SM_Sound <= SOUND_ST;
+						  end
+					 else if (monster_fire) begin
+							preScaleValue = preScaleValueTable[6];
+							enabler <= 1'b1;
+							SM_Sound <= SOUND_ST;
+							end		
+            end
+    
+            //------------
+            SOUND_ST: begin // moving no collision               
+                // collecting collisions                     
+					 SM_Sound <= IDLE_ST;
+					 enabler <= 1'b1;
+            end            
+        endcase // case 
     end
-	 */
+end // end fsm_sync
+
+   
 endmodule
 
 

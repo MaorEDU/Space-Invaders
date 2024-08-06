@@ -111,13 +111,26 @@ begin
 				flag <= 1'b1;
 				SingleHitPulse <= 1'b1;
 				collision_boarders_projectile = 1'b1;
-			end		
-	if (collisionBanana && flag == 1'b0) begin
+			end	
+			
+	if (drawing_request_boarders && drawing_request_banana && flag == 1'b0) begin
 			flag <=1'b1;
 			SingleHitPulse <= 1'b1;
 			collision_banana_not_monster = 1'b1;
 			end
-    	
+			
+    	if (drawing_request_spaceship && drawing_request_banana && flag == 1'b0) begin
+			flag <=1'b1;
+			SingleHitPulse <= 1'b1;
+			collision_banana_not_monster = 1'b1;
+			end
+			
+			if (drawing_request_shield && drawing_request_banana && flag == 1'b0) begin
+			flag <=1'b1;
+			SingleHitPulse <= 1'b1;
+			collision_banana_not_monster = 1'b1;
+			end
+			
 			SingleHitPulse <= 1'b0 ; // default 
 			if(startOfFrame) 
 				flag <= 1'b0 ; // reset for next time 
