@@ -1,9 +1,4 @@
 
-State Machine - |TOP_VGA_DEMO_KBD|SCORE_DISPLAY:inst1|NumbersBitMapSecond:inst1|SM_HP
-Name SM_HP.PROCESSING_ST 
-SM_HP.COL_ST 0 
-SM_HP.PROCESSING_ST 1 
-
 State Machine - |TOP_VGA_DEMO_KBD|Banana:inst11|BananaMove:ins12t|SM_Motion
 Name SM_Motion.POSITION_CHANGE_ST SM_Motion.START_OF_FRAME_ST SM_Motion.MOVE_ST SM_Motion.IDLE_ST SM_Motion.POSITION_LIMITS_ST 
 SM_Motion.IDLE_ST 0 0 0 0 0 
@@ -11,6 +6,16 @@ SM_Motion.MOVE_ST 0 0 1 1 0
 SM_Motion.START_OF_FRAME_ST 0 1 0 1 0 
 SM_Motion.POSITION_CHANGE_ST 1 0 0 1 0 
 SM_Motion.POSITION_LIMITS_ST 0 0 0 1 1 
+
+State Machine - |TOP_VGA_DEMO_KBD|SCORE_DISPLAY:inst1|NumbersBitMapSecond:inst1|SM_HP
+Name SM_HP.PROCESSING_ST 
+SM_HP.COL_ST 0 
+SM_HP.PROCESSING_ST 1 
+
+State Machine - |TOP_VGA_DEMO_KBD|SHIELD_DISPLAY:inst13|ShieldMatrixBitMap:inst|SM_Shield
+Name SM_Shield.PROCESSING_ST 
+SM_Shield.COL_ST 0 
+SM_Shield.PROCESSING_ST 1 
 
 State Machine - |TOP_VGA_DEMO_KBD|projectile_Block_T:inst2|projectile_move:inst|SM_Motion
 Name SM_Motion.POSITION_CHANGE_ST SM_Motion.START_OF_FRAME_ST SM_Motion.MOVE_ST SM_Motion.IDLE_ST SM_Motion.POSITION_LIMITS_ST 
@@ -20,11 +25,6 @@ SM_Motion.START_OF_FRAME_ST 0 1 0 1 0
 SM_Motion.POSITION_CHANGE_ST 1 0 0 1 0 
 SM_Motion.POSITION_LIMITS_ST 0 0 0 1 1 
 
-State Machine - |TOP_VGA_DEMO_KBD|SHIELD_DISPLAY:inst13|ShieldMatrixBitMap:inst|SM_Shield
-Name SM_Shield.PROCESSING_ST 
-SM_Shield.COL_ST 0 
-SM_Shield.PROCESSING_ST 1 
-
 State Machine - |TOP_VGA_DEMO_KBD|Spaceship_Block_T:inst9|spaceship_move:inst|SM_Motion
 Name SM_Motion.POSITION_CHANGE_ST SM_Motion.START_OF_FRAME_ST SM_Motion.MOVE_ST SM_Motion.IDLE_ST SM_Motion.POSITION_LIMITS_ST 
 SM_Motion.IDLE_ST 0 0 0 0 0 
@@ -32,3 +32,8 @@ SM_Motion.MOVE_ST 0 0 1 1 0
 SM_Motion.START_OF_FRAME_ST 0 1 0 1 0 
 SM_Motion.POSITION_CHANGE_ST 1 0 0 1 0 
 SM_Motion.POSITION_LIMITS_ST 0 0 0 1 1 
+
+State Machine - |TOP_VGA_DEMO_KBD|AUDIO:inst18|ToneDecoder:inst4|SM_Sound
+Name SM_Sound.SOUND_ST 
+SM_Sound.IDLE_ST 0 
+SM_Sound.SOUND_ST 1 

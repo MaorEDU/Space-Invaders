@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="alt_sld_fab" kind="alt_sld_fab" version="1.0" fabric="QSYS">
  <!-- Format version 17.0 595 (Future versions may contain additional information.) -->
- <!-- 2024.08.05.19:12:23 -->
+ <!-- 2024.08.06.22:45:24 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_DEVICE_FAMILY">
   <type>java.lang.String</type>
@@ -56,7 +56,7 @@
 the requested settings for a module instance. -->
   <parameter name="DESIGN_HASH">
    <type>java.lang.String</type>
-   <value>0645f3aef203c621d253</value>
+   <value>d879b74977f7c257b045</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -104,7 +104,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="EP_INFOS">
    <type>java.lang.String</type>
-   <value>{hpath {matrix_top_XY:inst8|lpm_constant:LPM_CONSTANT_component|lpm_constant_gj8:ag|sld_mod_ram_rom:mgl_prim1} } {hpath {SCORE_DISPLAY:inst1|Number_position:inst11|lpm_constant:LPM_CONSTANT_component|lpm_constant_lg8:ag|sld_mod_ram_rom:mgl_prim1} } {hpath {SCORE_DISPLAY:inst1|Number_positionB:inst26|lpm_constant:LPM_CONSTANT_component|lpm_constant_vh8:ag|sld_mod_ram_rom:mgl_prim1} } {hpath {SCORE_DISPLAY:inst1|Number_positionC:inst|lpm_constant:LPM_CONSTANT_component|lpm_constant_qg8:ag|sld_mod_ram_rom:mgl_prim1} } {hpath {sld_signaltap:auto_signaltap_0} } </value>
+   <value>{hpath {matrix_top_XY:inst8|lpm_constant:LPM_CONSTANT_component|lpm_constant_fj8:ag|sld_mod_ram_rom:mgl_prim1} } {hpath {SCORE_DISPLAY:inst1|Number_position:inst11|lpm_constant:LPM_CONSTANT_component|lpm_constant_lg8:ag|sld_mod_ram_rom:mgl_prim1} } {hpath {SCORE_DISPLAY:inst1|Number_positionB:inst26|lpm_constant:LPM_CONSTANT_component|lpm_constant_vh8:ag|sld_mod_ram_rom:mgl_prim1} } {hpath {SCORE_DISPLAY:inst1|Number_positionC:inst|lpm_constant:LPM_CONSTANT_component|lpm_constant_qg8:ag|sld_mod_ram_rom:mgl_prim1} } {hpath {sld_signaltap:auto_signaltap_0} } </value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -3843,7 +3843,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="DESIGN_HASH">
    <type>java.lang.String</type>
-   <value>0645f3aef203c621d253</value>
+   <value>d879b74977f7c257b045</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>

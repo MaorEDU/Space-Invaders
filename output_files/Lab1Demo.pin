@@ -272,7 +272,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AF11      :        :                   :      
 GND                          : AF12      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF13      :        :                   :         : 3B        :                
 CLOCK_50                     : AF14      : input  : 3.3-V LVTTL       :         : 3B        : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF15      :        :                   :         : 3B        :                
+EnableSound                  : AF15      : input  : 2.5 V             :         : 3B        : N              
 HEX1[0]                      : AF16      : output : 3.3-V LVTTL       :         : 4A        : Y              
 GND                          : AF17      : gnd    :                   :         :           :                
 HEX2[5]                      : AF18      : output : 3.3-V LVTTL       :         : 4A        : Y              
