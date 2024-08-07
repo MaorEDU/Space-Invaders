@@ -1,5 +1,5 @@
 Archive Project report for Lab1Demo
-Tue Aug 06 23:14:15 2024
+Wed Aug 07 14:37:11 2024
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Tue Aug 06 23:14:15 2024 ;
+; Archive Project Status ; Successful - Wed Aug 07 14:37:11 2024 ;
 ; Revision Name          ; Lab1Demo                              ;
 ; Top-level Entity Name  ; TOP_VGA_DEMO_KBD                      ;
 ; Family                 ; Cyclone V                             ;
@@ -59,9 +59,9 @@ Info: ----------------------------------------------------------
 Info: Generated report 'Lab1Demo.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/users/maora/desktop/technion/lab/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4757 megabytes
-    Info: Processing ended: Tue Aug 06 23:14:15 2024
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 4754 megabytes
+    Info: Processing ended: Wed Aug 07 14:37:11 2024
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 
 
@@ -121,10 +121,12 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/KEYBOARDX/TOP_KBD.bdf                                  ;
 ; RTL/one_sec_counter.sv                                     ;
 ; RTL/random_two.sv                                          ;
+; RTL/screenBitMap.mif                                       ;
 ; RTL/Seg7/hexss.sv                                          ;
 ; RTL/Seg7/multi_hex.bdf                                     ;
 ; RTL/Seg7/multi_hex.sv                                      ;
 ; RTL/Seg7/SEG7.SV                                           ;
+; RTL/startGame.sv                                           ;
 ; RTL/VGA/back_ground_draw.sv                                ;
 ; RTL/VGA/Banana.bdf                                         ;
 ; RTL/VGA/BananaBitMap.sv                                    ;

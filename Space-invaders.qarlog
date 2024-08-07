@@ -1,7 +1,7 @@
 Quartus Prime Archive log --	C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Space-Invaders.qarlog
 
 Archive:	C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Space-Invaders.qar
-Date:		Tue Aug 06 23:14:15 2024
+Date:		Wed Aug 07 14:37:10 2024
 Quartus Prime		17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 	=========== Files Selected: ===========
@@ -83,6 +83,8 @@ C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/down_counter_2.sv
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/down_counter_sound.sv
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/one_sec_counter.sv
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/random_two.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/screenBitMap.mif
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/startGame.sv
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/assignment_defaults.qdf
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/constraints/DE10_Standard_Audio.sdc
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/constraints/pin.tcl
@@ -92,7 +94,7 @@ C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/Chain1.cdf
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_Block_T.bdf
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/stp1.stp
-	======= Total: 87 files to archive =======
+	======= Total: 89 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.

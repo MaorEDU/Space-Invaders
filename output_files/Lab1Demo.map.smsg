@@ -1,2 +1,2 @@
-Warning (10268): Verilog HDL information at game_controller.sv(92): always construct contains both blocking and non-blocking assignments File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/game_controller.sv Line: 92
+Warning (10268): Verilog HDL information at game_controller.sv(96): always construct contains both blocking and non-blocking assignments File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/game_controller.sv Line: 96
 Warning (10268): Verilog HDL information at ToneDecoder.sv(50): always construct contains both blocking and non-blocking assignments File: C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/ToneDecoder.sv Line: 50
