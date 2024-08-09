@@ -42,6 +42,8 @@ module	objects_mux	(
 					input 	logic [7:0] bananaRGB,
 					input 	logic gameOver,
 					input    logic [7:0] RGB_ENDGAME_MIF,
+					input 	logic monsterHPDrawingRequest,
+					input 	logic [7:0] monsterHPRGB,
 				   output	logic	[7:0] RGBOut
 );
 int gameOverFlag;
@@ -57,9 +59,11 @@ begin
 			RGBOut <= RGB_ENDGAME_MIF;
 			gameOverFlag <= 1;
 			end
-			
+	
 		else if (spaceshipDrawingRequest == 1'b1 && gameOverFlag == 0 ) 
-			 RGBOut <= spaceshipRGB;  //fSirst priority 				
+			 RGBOut <= spaceshipRGB;  //fSirst priority 	
+		else if (monsterHPDrawingRequest == 1'b1 && gameOverFlag == 0)
+				RGBOut <= monsterHPRGB;
    	else if(drawingRequestHP == 1'b1 && gameOverFlag == 0) 
 				RGBOut <= playerHP_RGB;
 		else if (drawingRequestHP2 == 1'b1 && gameOverFlag == 0)

@@ -133,6 +133,22 @@ agreement for further details.
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
+	(input)
+	(rect -584 -8 -408 8)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "collisionMonster" (rect 5 0 83 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 800 152 976 168)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -165,7 +181,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 16 928 176 1040)
+	(rect 216 864 376 976)
 	(text "one_sec_counter" (rect 5 0 88 12)(font "Arial" ))
 	(text "inst5sd" (rect 8 96 43 108)(font "Arial" ))
 	(port
@@ -204,7 +220,7 @@ agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 144 96))
 	)
-	(annotation_block (parameter)(rect -200 864 20 902))
+	(annotation_block (parameter)(rect 0 800 220 838))
 )
 (symbol
 	(rect 480 120 720 264)
@@ -601,24 +617,31 @@ agreement for further details.
 		(line (pt 0 128)(pt 16 128))
 	)
 	(port
+		(pt 0 144)
+		(input)
+		(text "monster_collision" (rect 0 0 84 12)(font "Arial" ))
+		(text "monster_collision" (rect 21 139 105 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
 		(pt 232 32)
 		(output)
 		(text "active" (rect 0 0 30 12)(font "Arial" ))
-		(text "active" (rect 186 27 216 39)(font "Arial" ))
+		(text "active" (rect 186 27 211 39)(font "Arial" ))
 		(line (pt 232 32)(pt 216 32))
 	)
 	(port
 		(pt 232 48)
 		(output)
 		(text "topLeftX[10..0]" (rect 0 0 73 12)(font "Arial" ))
-		(text "topLeftX[10..0]" (rect 150 43 223 55)(font "Arial" ))
+		(text "topLeftX[10..0]" (rect 150 43 211 55)(font "Arial" ))
 		(line (pt 232 48)(pt 216 48)(line_width 3))
 	)
 	(port
 		(pt 232 64)
 		(output)
 		(text "topLeftY[10..0]" (rect 0 0 75 12)(font "Arial" ))
-		(text "topLeftY[10..0]" (rect 148 59 223 71)(font "Arial" ))
+		(text "topLeftY[10..0]" (rect 148 59 211 71)(font "Arial" ))
 		(line (pt 232 64)(pt 216 64)(line_width 3))
 	)
 	(parameter
@@ -850,21 +873,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "clk" (rect -56 944 -42 961)(font "Intel Clear" ))
-	(pt -64 960)
-	(pt 16 960)
-)
-(connector
-	(text "resetN" (rect -56 960 -26 977)(font "Intel Clear" ))
-	(pt -64 976)
-	(pt 16 976)
-)
-(connector
-	(text "oneSec" (rect 186 944 220 961)(font "Intel Clear" ))
-	(pt 176 960)
-	(pt 264 960)
-)
-(connector
 	(text "oneSec" (rect 648 800 682 817)(font "Intel Clear" ))
 	(pt 696 816)
 	(pt 640 816)
@@ -987,5 +995,29 @@ agreement for further details.
 	(pt 480 1008)
 	(pt 424 1008)
 )
+(connector
+	(text "collisionMonster" (rect -350 -16 -273 1)(font "Intel Clear" ))
+	(pt -408 0)
+	(pt -336 0)
+)
+(connector
+	(text "collisionMonster" (rect -80 512 -3 529)(font "Intel Clear" ))
+	(pt -16 528)
+	(pt -88 528)
+)
+(connector
+	(text "clk" (rect 144 880 158 897)(font "Intel Clear" ))
+	(pt 136 896)
+	(pt 216 896)
+)
+(connector
+	(text "resetN" (rect 144 896 174 913)(font "Intel Clear" ))
+	(pt 136 912)
+	(pt 216 912)
+)
+(connector
+	(text "oneSec" (rect 386 880 420 897)(font "Intel Clear" ))
+	(pt 376 896)
+	(pt 464 896)
+)
 (text "Add 2 HEXSS modules and 2 output ports here" (rect 1520 608 1799 627)(font "Intel Clear" (font_size 8)))
-(text "Update the bomb timer value" (rect 808 568 985 587)(font "Intel Clear" (font_size 8)))

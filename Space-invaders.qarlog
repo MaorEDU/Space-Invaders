@@ -1,7 +1,7 @@
 Quartus Prime Archive log --	C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Space-Invaders.qarlog
 
 Archive:	C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Space-Invaders.qar
-Date:		Wed Aug 07 14:37:10 2024
+Date:		Fri Aug 09 16:44:15 2024
 Quartus Prime		17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 	=========== Files Selected: ===========
@@ -27,6 +27,9 @@ C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_positionB.v
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_positionC.bsf
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_positionC.qip
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_positionC.v
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_position_monster.bsf
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_position_monster.qip
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/Number_position_monster.v
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/AUDIO.bdf
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/SinTable.sv
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/AUDIO/TOP_AUDIO.bdf
@@ -60,6 +63,7 @@ C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/back_ground_draw.sv
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/bananaMove.sv
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/game_controller.sv
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/monster_health_bar.sv
+C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/monster_hp_object.sv
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/objects_mux.sv
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/playerHP.sv
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/RTL/VGA/player_hp_object.sv
@@ -94,7 +98,7 @@ C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/Chain1.cdf
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_Block_T.bdf
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/output_files/projectile_bitmap.sv
 C:/Users/maora/Desktop/Technion/lab/Space-Invaders/stp1.stp
-	======= Total: 89 files to archive =======
+	======= Total: 93 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.

@@ -1,5 +1,5 @@
 Archive Project report for Lab1Demo
-Wed Aug 07 14:37:11 2024
+Fri Aug 09 16:44:15 2024
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Wed Aug 07 14:37:11 2024 ;
+; Archive Project Status ; Successful - Fri Aug 09 16:44:15 2024 ;
 ; Revision Name          ; Lab1Demo                              ;
 ; Top-level Entity Name  ; TOP_VGA_DEMO_KBD                      ;
 ; Family                 ; Cyclone V                             ;
@@ -59,9 +59,9 @@ Info: ----------------------------------------------------------
 Info: Generated report 'Lab1Demo.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/users/maora/desktop/technion/lab/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4754 megabytes
-    Info: Processing ended: Wed Aug 07 14:37:11 2024
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 4755 megabytes
+    Info: Processing ended: Fri Aug 09 16:44:15 2024
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 
@@ -91,6 +91,9 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; Number_position.bsf                                        ;
 ; Number_position.qip                                        ;
 ; Number_position.v                                          ;
+; Number_position_monster.bsf                                ;
+; Number_position_monster.qip                                ;
+; Number_position_monster.v                                  ;
 ; Number_positionB.bsf                                       ;
 ; Number_positionB.qip                                       ;
 ; Number_positionB.v                                         ;
@@ -133,6 +136,7 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/VGA/bananaMove.sv                                      ;
 ; RTL/VGA/game_controller.sv                                 ;
 ; RTL/VGA/monster_health_bar.sv                              ;
+; RTL/VGA/monster_hp_object.sv                               ;
 ; RTL/VGA/NumbersBitMap.sv                                   ;
 ; RTL/VGA/NumbersBitMapSecond.sv                             ;
 ; RTL/VGA/objects_mux.sv                                     ;
